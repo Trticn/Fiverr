@@ -147,8 +147,9 @@ const sidebar = document.getElementById('mobileSidebar');
 
 burger.addEventListener('click', () => {
 
-    sidebar.classList.toggle('translate-x-full','opacity-0','invisible');
-
+    sidebar.classList.toggle('translate-x-full');
+    sidebar.classList.toggle('opacity-0');
+    sidebar.classList.toggle('invisible');
     burger.classList.toggle('burger-open');
 
     // Sprečavanje skrolovanja
@@ -163,7 +164,9 @@ sidebar.querySelectorAll('a').forEach(link => {
     const targetId = link.getAttribute('href');
 
 
-    sidebar.classList.add('translate-x-full', 'opacity-0', 'invisible');
+    sidebar.classList.add('translate-x-full');
+    sidebar.classList.add('opacity-0');
+    sidebar.classList.add('invisible'); 
     burger.classList.remove('burger-open');
     document.body.classList.remove('overflow-hidden');
     document.documentElement.classList.remove('overflow-hidden');
