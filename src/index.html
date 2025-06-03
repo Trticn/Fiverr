@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./input.css" rel="stylesheet" />
+
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" defer src="./script.js"></script>
+  </head>
+  <body class="bg-white text-white font-poppins">
+    <header class="w-full bg-[#0A0A0A]  z-[1000] relative">
+      <div class="container mx-auto">
+        <nav class="px-10 nav__links py-10 flex items-center justify-between relative">
+          <div class="text-2xl font-bold text-white">N</div>
+    
+          <ul class="hidden md:flex space-x-20 text-[#DBDBDB] font-light text-base">
+            <li><a href="#section--home" class="hover:text-white nav__link">Home</a></li>
+            <li><a href="#section-about" class="hover:text-white nav__link">About</a></li>
+            <li><a href="#section-services" class="hover:text-white nav__link">Services</a></li>
+          </ul>
+    
+          <div class="hidden md:block">
+            <a href="#contact" class="bg-[#4D86FF] text-white px-6 py-3 rounded-full hover:bg-blue-500 transition nav__link">
+              Get in Touch
+            </a>
+          </div>
+    
+          <div class="ml-auto md:hidden z-50">
+            <button id="burger" class="flex flex-col justify-center items-center space-y-1">
+              <span class="block w-4 h-0.5 bg-white rounded transform transition-all duration-300 origin-center"></span>
+              <span class="block w-6 h-0.5 bg-white rounded transform transition-all duration-300 origin-center"></span>
+              <span class="block w-3 h-0.5 bg-white rounded transform transition-all duration-300 origin-center"></span>
+            </button>
+          </div>
+          
+        </nav>
+      </div>
+      <div id="mobileSidebar" class="fixed top-16 right-0 pt-20 w-full bg-black z-40 h-[calc(100vh-64px)] translate-x-full opacity-0 invisible transition-all duration-300 ease-in-out md:hidden flex flex-col text-xl font-light px-6 py-10 text-[#DBDBDB]">
+        <!-- QUICK LINKS -->
+        <div class="flex flex-col text-md items-center space-y-6">
+            <h3 class="text-white text-md font-normal tracking-wide">Quick Links:</h3>
+            <a href="#section--home" class="hover:text-white transition">Home</a>
+            <a href="#section-about" class="hover:text-white transition">About</a>
+            <a href="#section-services" class="hover:text-white transition">Services</a>
+        </div>
+                
+        <!-- GET IN TOUCH -->
+        <div class="mt-16 flex flex-col items-center space-y-6">
+            <h3 class="text-white text-md font-normal tracking-wide">Get in Touch:</h3>
+                    
+            <!-- Email -->
+            <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" />
+                </svg>
+                <a href="mailto:contact@nikolinavujinovic.com" class="hover:text-blue-400">contact@nikolinavujinovic.com</a>
+            </div>
+                    
+            <!-- Telefon -->
+            <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V6H20V18ZM18.6 16.2L17.2 14.8L15.8 16.2C14.1 14.5 12.5 12.9 11.2 11.2L12.6 9.8L11.2 8.4L8.8 10.8C8.3 11.3 8.3 12.1 8.8 12.6C11.4 15.2 13.8 17.6 16.4 20.2C16.9 20.7 17.7 20.7 18.2 20.2L20.6 17.8L19.2 16.4L18.6 16.2Z" />
+                </svg>
+                <a href="tel:+38765123456" class="hover:text-blue-400">+387 65 123 456</a>
+            </div>
+                    
+            <!-- Lokacija -->
+            <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" />
+                </svg>
+                <span>Worldwide</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    </header>
+    
+
+
+
+    <div
+    class="hero-section w-full flex flex-col lg:flex-row relative bg-[#0A0A0A] overflow-visible"
+  >
+
+    <div class="container mx-auto px-10 md:py-20 relative z-10">
+      <div class="w-full lg:w-[40%]">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 leading-relaxed tracking-wide text-white"
+        >
+          Designing Spaces That Feel Like Home
+        </h1>
+        <p
+          class="text-[#BDBDBD] text-base md:text-lg font-light mb-10 max-w-md leading-relaxed"
+        >
+          Nikolina Vujinović crafts harmonious interiors and architectural
+          concepts tailored to your lifestyle.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 lg:pb-50">
+          <button
+            class="md:w-full w-[80%] bg-[#4D86FF] cursor-pointer text-white px-8 py-4 rounded-full hover:bg-blue-600 transition font-medium"
+          >
+            Get a Consultation
+          </button>
+          <button
+            class="md:w-full w-[80%] bg-[#0A0A0A] cursor-pointer border border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition font-medium"
+          >
+            View Portfolio
+          </button>
+        </div>
+      </div>
+    </div>
+  
+   
+
+      <img
+        src="./images/sofa1.png"
+        alt="Interior Design"
+        class="w-full  lg:w-[55%] lg:absolute lg:right-0 lg:bottom-0 bg-transparent z-0 pointer-events-none object-contain translate-y-[20%] lg:translate-y-[25%]"
+      />
+
+  </div>
+  
+
+    <section
+      class="tool_and_technologies-section bg-white relative z-[0] mt-20 lg:mt-40"
+    >
+      <div class="overflow-hidden">
+        <h2 class="text-black font-medium  text-center  text-2xl py-20">Behind the Scenes</h2>
+        <div class="technologies flex text-black">
+          <ul class="flex items-center justify-center">
+            <li class="px-20">
+              <span>AutoCAD</span>
+            </li>
+            <li class="px-20">
+              <span>Enscape</span>
+            </li>
+            <li class="px-20">
+              <span>SketchUP</span>
+            </li>
+            <li class="px-20">
+              <span>V-RAY</span>
+            </li>
+          </ul>
+
+          <ul class="flex items-center justify-center" aria-hidden="true">
+            <li class="px-20">
+              <span>AutoCAD</span>
+            </li>
+            <li class="px-20">
+              <span>Enscape</span>
+            </li>
+            <li class="px-20">
+              <span>SketchUP</span>
+            </li>
+            <li class="px-20">
+              <span>V-RAY</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-about" class="about bg-white pt-10 lg:pt-20 mt-10 lg:mt-20 section">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+  
+          <div class="w-full lg:w-1/2 flex items-center">
+            <div class="py-10 text-center px-4 lg:px-0 lg:text-left">
+              <h2 class="text-4xl lg:text-5xl text-gray-800 font-bold mb-4 md:mb-6">
+                Meet <span class="font-antro">Nikolina</span>
+                
+              </h2>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Nikolina Vujinović is an architect and interior designer based in Banja Luka.
+                With a deep passion for spatial harmony, she specializes in creating modern,
+                warm, and functional interiors. Her approach combines creativity with precision,
+                using industry-standard tools like <span class="font-bold">SketchUp, V-Ray, AutoCAD, and Enscape</span>
+                to bring ideas to life with clarity and realism.
+                <br /><br />
+                From concept to detailed plans, Nikolina ensures that
+                <span class="font-bold">every space she designs reflects the personality</span>
+                and needs of the people living or working in it.
+              </p>
+            </div>
+          </div>
+    
+          <div class="w-full lg:w-1/2 relative flex lg:h-auto h-[300px] lg:items-stretch bg-[#4D86FF] rounded-3xl">
+        
+            <div 
+            class="absolute left-1/2 bottom-0 -translate-x-1/2 
+                   lg:h-[90%]
+                   h-[80%]
+                   translate-y-[10%]
+                   aspect-square  
+                   rounded-full bg-white z-0"
+        ></div>
+        
+            <!-- Slika -->
+            <img
+                src="./images/profilna.png"
+                alt="Nikolina Vujinović"
+                class="absolute inset-x-1/2 bottom-0 -translate-x-1/2 
+                       h-[90%] sm:h-[95%] lg:h-[110%] 
+                       object-cover rounded-3xl z-10"
+            />
+        </div>
+          
+          
+
+          
+
+    
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+
+    <section
+      id="section-services"
+      class="bg-white pt-10 lg:pt-20 mt-10 lg:mt-20 font-light section"
+    >
+      <div class="container mx-auto">
+        <h2
+        class="text-3xl  text-center leading-relaxed lg:text-4xl text-gray-800 font-semibold mb-20 lg:mb-30"
+      >
+        Desing Your Story
+      </h2>
+        <div
+          class="flex flex-col lg:flex-row px-5 lg:px-0 items-start justify-center gap-8 relative"
+        >
+          <div
+            class="flex flex-row items-start gap-4 lg:flex-1 lg:flex-col lg:items-center lg:text-center"
+          >
+            <div
+              class="w-16 h-16 lg:w-20 lg:h-20 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+            >
+              1
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Interior Design
+              </h3>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Personalized interior solutions for residential and commercial
+                spaces.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col items-center justify-start lg:justify-center lg:w-20 w-full"
+          >
+            <svg
+              viewBox="0 0 200 80"
+              class="w-28 h-20 rotate-90 lg:rotate-0 block"
+            >
+              <defs>
+                <marker
+                  id="arrowhead"
+                  markerWidth="10"
+                  markerHeight="7"
+                  refX="0"
+                  refY="3.5"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 10 3.5, 0 7" class="fill-black" />
+                </marker>
+              </defs>
+              <path
+                d="M10,10 Q100,70 190,10"
+                fill="none"
+                stroke="black"
+                stroke-width="3"
+                stroke-dasharray="8 6"
+                marker-end="url(#arrowhead)"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="flex flex-row items-start gap-4 lg:flex-1 lg:flex-col lg:items-center lg:text-center"
+          >
+            <div
+              class="w-16 h-16 lg:w-20 lg:h-20 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+            >
+              2
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Conceptual Design
+              </h3>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Sketches and 3D proposals that help you visualize your space.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col items-center justify-start lg:justify-center lg:w-20 w-full"
+          >
+            <svg
+              viewBox="0 0 200 80"
+              class="w-28 h-20 rotate-90 lg:rotate-0 block"
+            >
+              <defs>
+                <marker
+                  id="arrowhead"
+                  markerWidth="10"
+                  markerHeight="7"
+                  refX="0"
+                  refY="3.5"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 10 3.5, 0 7" class="fill-black" />
+                </marker>
+              </defs>
+              <path
+                d="M10,10 Q100,70 190,10"
+                fill="none"
+                stroke="black"
+                stroke-width="3"
+                stroke-dasharray="8 6"
+                marker-end="url(#arrowhead)"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="flex flex-row items-start gap-4 lg:flex-1 lg:flex-col lg:items-center lg:text-center"
+          >
+            <div
+              class="w-16 h-16 lg:w-20 lg:h-20 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+            >
+              3
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Technical Documentation
+              </h3>
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Detailed 2D drawings and technical plans for renovation or
+                construction projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-packages"
+      class="services bg-white pt-10 lg:pt-20 mt-10 lg:mt-20 font-light section"
+    >
+      <div class="container mx-auto  leading-relaxed tracking-wide">
+         <h2
+          class="text-3xl  text-center lg:text-4xl text-gray-800 font-semibold mb-20 lg:mb-30"
+        >
+          Choose Your package
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row px-5 items-start justify-between gap-4"
+        >
+          <div
+            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+          >
+          
+            <div
+              class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
+            >
+              <h3 class="text-white text-3xl font-semibold tracking-wider mb-6">
+                Starter Package
+              </h3>
+              <ul class="text-white list-inside font-light space-y-6">
+                <li class="flex items-center ">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  Moodboard & color palette
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  2 concept design variations
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  Basic 3D visualizations
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+            >
+              €190
+            </div>
+          </div>
+          <div
+            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+          >
+            <div
+              class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
+            >
+              <h3 class="text-white text-3xl font-semibold tracking-wider mb-6">
+                Essential Package
+              </h3>
+              <ul class="text-white font-light list-inside space-y-6">
+                <li class="flex items-center ">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  Everything in Starter
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  Detailed 2D layout (AutoCAD)
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-[#4D86FF] rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  Material & furniture suggestions
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+            >
+              €390
+            </div>
+          </div>
+
+          <div
+            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+          >
+            <div
+              class="bg-[#4D86FF] p-8 rounded-t-md min-h-[310px] text-left pb-10"
+            >
+              <h3 class="text-white text-3xl font-semibold mb-6">
+                Premium Package
+              </h3>
+              <ul class="text-white list-inside font-light space-y-6">
+                <li class="flex items-center ">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-white rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  Full interior concept
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-white rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  Walkthrough animation (via Enscape)
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 bg-white rounded-full mr-3 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-4 h-4 text-black"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </span>
+                  Material selection & moodboard
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+            >
+              €490
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section-sketches"
+      class="mt-20 lg:mt-40 relative bg-black text-white section py-10 lg:py-20"
+    >
+      <div
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[50px] border-l-transparent border-t-[60px] border-t-white border-r-[50px] border-r-transparent"
+      ></div>
+      
+      <div class="py-5 lg:py-10">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row gap-8 items-center">
+            <div class="flex-1">
+              <h2 class="text-3xl lg:text-4xl font-semibold lg:text-left text-center">
+                Sketches By <br/> <span class="font-antro"> Nikolina</span>
+              </h2>
+
+              <img
+                src="./images/Mask group.png"
+                alt="Lijeva slika"
+                class="w-full h-auto mt-8 lg:mt-9"
+              />
+            </div>
+            <div class="flex-1 flex flex-col">
+              <div class="lg:order-1 order-2">
+                <h2 class="text-3xl lg:text-4xl font-antro font-semibold lg:text-right mt-8 lg:mt-0 text-center">
+                  Each line is a thought I <br/> didn't say out loud.
+                </h2>
+              </div>
+
+              <img
+                src="./images/Mask group-1.png"
+                alt="desna"
+                class="w-full h-auto lg:order-2 order-1 mt-4 lg:mt-12"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="relative">
+    <section id="section-testimonials" class="mt-10 lg:mt-20  pt-10 relative section">
+      <div class="container mx-auto">
+        <h2 class="text-black text-3xl font-semibold text-center">
+          From our clients
+        </h2>
+        <div class="swiper mt-20 mySwiper relative">
+          <div class="swiper-wrapper lg:pb-10 pb-5">
+               <div
+            class="swiper-slide bg-white shadow-xl rounded-2xl p-6 w-full mx-auto"
+          >
+              <div class=" bg-white relative">
+                <div class="flex items-center mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/55.jpg"
+                    alt="Ana Marković"
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Tijana Surlan
+                    </h3>
+                    <p class="text-sm text-gray-500">Zagreb</p>
+                  </div>
+                  <svg class="w-10 h-10" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.4-34-4.1-50.2H272v95h147.2c-6.4 34.6-25.4 63.9-54.2 83.4v69.2h87.6c51.3-47.2 80.9-116.8 80.9-197.4z"/>
+                    <path fill="#34A853" d="M272 544.3c73.6 0 135.4-24.4 180.6-66.5l-87.6-69.2c-24.4 16.4-55.6 26-93 26-71.5 0-132-48.2-153.6-113.2H28.1v70.9c45.2 89.5 137.6 151.9 243.9 151.9z"/>
+                    <path fill="#FBBC05" d="M118.4 321.4c-10.5-31.4-10.5-65.5 0-96.9V153.6H28.1c-37.9 75.9-37.9 165.2 0 241.1l90.3-73.3z"/>
+                    <path fill="#EA4335" d="M272 107.7c39.9-.6 78.1 14.3 107.3 41.5l80.1-80.1C407.3 24.7 342.6-.3 272 0 166.8 0 74.4 62.4 28.1 153.6l90.3 70.9c21.6-65 82.1-113.2 153.6-113.2z"/>
+                  </svg>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "Nikolina transformed my small apartment into a nice and cozy
+                  and modern sanctuary. Her ideas were fresh and she was so easy
+                  to work with."
+                </p>
+                <div class="flex">
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div
+            class="swiper-slide bg-white shadow-xl rounded-2xl p-6 w-full mx-auto"
+          >
+              <div class="bg-white relative">
+                <div class="flex items-center mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/21.jpg"
+                    alt="Ana Marković"
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Marija Milosevic
+                    </h3>
+                    <p class="text-sm text-gray-500">Zagreb</p>
+                  </div>
+                  <svg class="w-10 h-10" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.4-34-4.1-50.2H272v95h147.2c-6.4 34.6-25.4 63.9-54.2 83.4v69.2h87.6c51.3-47.2 80.9-116.8 80.9-197.4z"/>
+                    <path fill="#34A853" d="M272 544.3c73.6 0 135.4-24.4 180.6-66.5l-87.6-69.2c-24.4 16.4-55.6 26-93 26-71.5 0-132-48.2-153.6-113.2H28.1v70.9c45.2 89.5 137.6 151.9 243.9 151.9z"/>
+                    <path fill="#FBBC05" d="M118.4 321.4c-10.5-31.4-10.5-65.5 0-96.9V153.6H28.1c-37.9 75.9-37.9 165.2 0 241.1l90.3-73.3z"/>
+                    <path fill="#EA4335" d="M272 107.7c39.9-.6 78.1 14.3 107.3 41.5l80.1-80.1C407.3 24.7 342.6-.3 272 0 166.8 0 74.4 62.4 28.1 153.6l90.3 70.9c21.6-65 82.1-113.2 153.6-113.2z"/>
+                  </svg>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "Nikolina transformed my small apartment into a nice and cozy
+                  and modern sanctuary. Her ideas were fresh and she was so easy
+                  to work with."
+                </p>
+                <div class="flex">
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div
+            class="swiper-slide bg-white shadow-xl rounded-2xl p-6 w-full mx-auto"
+          >
+              <div class="bg-white relative">
+                <div class="flex items-center mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Ana Marković"
+                    class="w-12 h-12 rounded-full mr-4"
+                  />
+                  <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-gray-800">
+                      Dijana Trtic
+                    </h3>
+                    <p class="text-sm text-gray-500">Zagreb</p>
+                  </div>
+                  <svg class="w-10 h-10" viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4285F4" d="M533.5 278.4c0-17.4-1.4-34-4.1-50.2H272v95h147.2c-6.4 34.6-25.4 63.9-54.2 83.4v69.2h87.6c51.3-47.2 80.9-116.8 80.9-197.4z"/>
+                    <path fill="#34A853" d="M272 544.3c73.6 0 135.4-24.4 180.6-66.5l-87.6-69.2c-24.4 16.4-55.6 26-93 26-71.5 0-132-48.2-153.6-113.2H28.1v70.9c45.2 89.5 137.6 151.9 243.9 151.9z"/>
+                    <path fill="#FBBC05" d="M118.4 321.4c-10.5-31.4-10.5-65.5 0-96.9V153.6H28.1c-37.9 75.9-37.9 165.2 0 241.1l90.3-73.3z"/>
+                    <path fill="#EA4335" d="M272 107.7c39.9-.6 78.1 14.3 107.3 41.5l80.1-80.1C407.3 24.7 342.6-.3 272 0 166.8 0 74.4 62.4 28.1 153.6l90.3 70.9c21.6-65 82.1-113.2 153.6-113.2z"/>
+                  </svg>
+                </div>
+                <p class="text-gray-700 mb-4">
+                  "Nikolina transformed my small apartment into a nice and cozy
+                  and modern sanctuary. Her ideas were fresh and she was so easy
+                  to work with."
+                </p>
+                <div class="flex">
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-5 h-5 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.17c.969 0 1.371 1.24.588 1.81l-3.376 2.455a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.376-2.455a1 1 0 00-1.176 0l-3.376 2.455c-.784.57-1.838-.197-1.539-1.118l1.285-3.957a1 1 0 00-.364-1.118L2.045 9.384c-.783-.57-.38-1.81.588-1.81h4.17a1 1 0 00.95-.69l1.286-3.957z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons flex justify-center gap-4 mt-8">
+          <button
+            class="button-prev cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-white rounded-full border border-gray-300 flex items-center justify-center text-black text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            class="button-next cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq mt-10 lg:mt-20 pt-10 pb-40 section">
+      <div class="container mx-auto">
+          <div class="max-w-5xl mx-auto">
+             
+              <div class="text-center mb-12">
+                  <h2 class="text-4xl font-bold text-black mb-4">FAQs</h2>
+                  <p class="text-gray-600 text-lg">Everything you need to know about our design services</p>
+              </div>
+
+              <div class="space-y-4">
+                
+                  <div class="bg-white faq-item rounded-lg shadow-sm overflow-hidden">
+                      <div class="flex p-6 justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors duration-150" >
+                          <div class="flex items-center">
+                            <div class="lg:w-10 lg:h-10 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                              <svg class="lg:w-5 lg:h-5 w-4 h-4 text-[#4D86FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 6v12h18V6M3 18h18M8 21h8" />
+                              </svg>
+                            </div>
+                            
+                              <h3 class="text-lg font-semibold text-gray-800">Do you work online/remotely?</h3>
+                          </div>
+                          <div class="flex justify-end items-center">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                              <svg id="icon-1" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+                              </svg>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div class="p-6 border-t border-gray-100 bg-gray-50">
+                            <p class="text-gray-700">Yes, I work remotely and can assist you regardless of your location.</p>
+                        </div>
+                    </div>
+                  </div>
+
+    
+                  <div class="bg-white faq-item rounded-lg shadow-sm overflow-hidden">
+                      <div class="flex p-6 justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors duration-150">
+                          <div class="flex items-center">
+                            <div class="lg:w-10 lg:h-10 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                              <svg class="lg:w-5 lg:h-5 w-4 h-4 text-[#4D86FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M11 5h2m4 0h2a2 2 0 012 2v2m-6 10H7a2 2 0 01-2-2v-6m10-2L5 19l-1 4 4-1L19 7z" />
+                              </svg>
+                            </div>
+                            
+                              <h3 class="text-lg font-semibold text-gray-800">Can I request changes?</h3>
+                          </div>
+                       
+                         <div class="flex justify-end items-center">
+                          <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                            <svg id="icon-2" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+                            </svg>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div class="p-6 border-t border-gray-100 bg-gray-50">
+                            <p class="text-gray-700">Absolutely. I welcome feedback and offer revisions to ensure you're fully satisfied.</p>
+                        </div>
+                    </div>
+                  </div>
+
+               
+                  <div class="bg-white faq-item rounded-lg shadow-sm overflow-hidden">
+                      <div class="flex p-6 justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors duration-150">
+                          <div class="flex items-center">
+                              <div class="lg:w-10 lg:h-10 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                                  <svg class="lg:w-5 lg:h-5 w-4 h-4 text-[#4D86FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                  </svg>
+                              </div>
+                              <h3 class="text-lg font-semibold text-gray-800">What are your payment terms?</h3>
+                          </div>
+                          <div class="flex justify-end items-center">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                              <svg id="icon-3" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+                              </svg>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div class="p-6 border-t border-gray-100 bg-gray-50">
+                            <p class="text-gray-700">We require a 50% deposit to begin work, with the remaining balance due upon project completion. We accept all major credit cards, bank transfers, and offer flexible payment plans for larger projects.</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white faq-item rounded-lg shadow-sm overflow-hidden">
+                      <div class="flex p-6 justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors duration-150">
+                          <div class="flex items-center">
+                            <div class="lg:w-10 lg:h-10 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                              <svg class="lg:w-5 lg:h-5 w-4 h-4 text-[#4D86FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                              </svg>
+                          </div>
+                              <h3 class="text-lg font-semibold text-gray-800">How long does a project take?</h3>
+                          </div>
+                          <div class="flex justify-end items-center ">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                              <svg id="icon-4" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+                              </svg>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      <div id="content-4" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div class="p-6 border-t border-gray-100 bg-gray-50">
+                            <p class="text-gray-700">Project timelines vary depending on complexity, but I’ll always provide a clear estimate up front.</p>
+                        </div>
+                    </div>
+                  </div>
+
+           
+                  <div class="bg-white faq-item rounded-lg shadow-sm overflow-hidden">
+                      <div class="flex p-6 justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors duration-150">
+                          <div class="flex items-center">
+                            <div class="lg:w-10 lg:h-10 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 lg:h-5 w-4 h-4 text-[#4D86FF]" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7 2a1 1 0 0 0-1 1v9h12V3a1 1 0 0 0-1-1H7zm11 11H6a1 1 0 0 0-1 1v7h2v-3h10v3h2v-7a1 1 0 0 0-1-1z"/>
+                              </svg>
+                            </div>
+                            
+                              <h3 class="text-lg font-semibold text-gray-800">Do you help with furniture sourcing?</h3>
+                          </div>
+                          <div class="flex justify-end items-center ">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                              <svg id="icon-5" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
+                              </svg>
+                            </div>
+                          </div>
+                          
+                      </div>
+                      <div id="content-5" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                        <div class="p-6 border-t border-gray-100 bg-gray-50">
+                            <p class="text-gray-700">Yes, I can assist with selecting and sourcing furniture that aligns with your design and budget.</p>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+    <footer class="bg-black text-white relative py-40 mt-40">
+      <div class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] z-10">
+        <div class="bg-white rounded-3xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 shadow-gray-600 shadow-xl py-8 lg:py-20 px-8 md:px-12 lg:px-60">
+          <div class="flex-1 leading-15 lg:leading-20">
+            <h2 class=" lg:text-[46px] text-[38px] text-black font-semibold ">Let's design something beautiful.</h2>
+          </div>
+          <div class="flex-1 flex flex-col items-start gap-4">
+            <p class="text-gray-500 text-xl leading-relaxed">Whether you need a fresh layout or a full renovation plan - Nikolina is here to help.</p>
+            <button class="bg-blue-500 text-white px-10 py-3 rounded-full font-light hover:bg-blue-600 transition-colors">Get a Consultation</button>
+          </div>
+        </div>
+    </div>
+      
+      
+      
+      <div class="container mx-auto pt-20 px-4">
+
+   
+        <div class="grid grid-cols-1 md:grid-cols-2 pb-20 gap-12">
+          <div class="md:text-left text-center">
+            <h3 class="text-4xl">N</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Nikolina Vujinović is an architect and interior designer based in
+              Banja Luka. With a deep passion for spatial harmony, she
+              specializes in creating modern, warm, and functional interiors.
+            </p>
+          </div>
+
+          <div id="contact" class="space-y-4 md:text-right text-center">
+            <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+            <div
+              class="flex items-center space-x-3 justify-center md:justify-end"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+                />
+              </svg>
+              <a
+                href="mailto:contact@nikolinavujinovic.com"
+                class="hover:text-blue-400"
+                >contact@nikolinavujinovic.com</a
+              >
+            </div>
+            <div
+              class="flex items-center space-x-3 justify-center md:justify-end"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V6H20V18ZM18.6 16.2L17.2 14.8L15.8 16.2C14.1 14.5 12.5 12.9 11.2 11.2L12.6 9.8L11.2 8.4L8.8 10.8C8.3 11.3 8.3 12.1 8.8 12.6C11.4 15.2 13.8 17.6 16.4 20.2C16.9 20.7 17.7 20.7 18.2 20.2L20.6 17.8L19.2 16.4L18.6 16.2Z"
+                />
+              </svg>
+              <a href="tel:+38765123456" class="hover:text-blue-400"
+                >+387 65 123 456</a
+              >
+            </div>
+            <div
+              class="flex items-center space-x-3 justify-center md:justify-end"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                />
+              </svg>
+              <span>Bosnia and Herzegovina</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-1/2 transform pb-5 -translate-x-1/2 mt-12 pt-5  text-center w-full">
+          <div class="flex flex-col items-center">
+            <div class="flex space-x-6 mb-4">
+              <a
+                href="https://wa.me/38765989581"
+                class="text-gray-400 hover:text-green-500"
+              >
+                <span class="sr-only">WhatsApp</span>
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/vujinovicnikolina" class="text-gray-400 hover:text-pink-400">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-blue-400">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="text-gray-400 text-sm space-y-1">
+              <div>
+                © <span id="year"></span> Nikolina Vujinović. All rights
+                reserved.
+              </div>
+              <div>Website by Nikola Trtić</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div
+  </body>
+</html>

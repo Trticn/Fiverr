@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  letter-spacing: 0.2rem
+ 
+}
+
+@font-face {
+  font-family: 'Antro Vectra Bold';
+  src: url('./fonts/Antro_Vectra_Bolder.otf') format('truetype');
+  letter-spacing: 0.2rem;
+}
+
+  .technologies {
+    user-select: none;
+    --gap: 20px;
+    gap: var(--gap);
+  }
+  
+  .technologies ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+  }
+  
+  .technologies:hover ul {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  
+  .section {
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .sticky {
+    position: fixed;
+  }
+  
