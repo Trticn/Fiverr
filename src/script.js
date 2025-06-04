@@ -8,10 +8,11 @@ Swiper.use([Navigation, EffectCoverflow]);
 new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
-  centeredSlides: true,
+  initialSlide: 2,
   loop: true,
-  loopedSlides: 3,
-  initialSlide:2,
+  centeredSlides: true,
+  loopedSlides: 1,
+  slideToClickedSlide: true,
 
   coverflowEffect: {
     rotate: 0,
@@ -27,15 +28,14 @@ new Swiper(".mySwiper", {
     prevEl: ".button-prev",
   },
 
-
   breakpoints: {
-   
     1024: {
       slidesPerView: 3,
+      centeredSlides: true,
     },
-
     0: {
       slidesPerView: 1,
+      centeredSlides: false,
     },
   },
 });
