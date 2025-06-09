@@ -6,6 +6,7 @@ module.exports = {
         poppins: ['Poppins', 'regular'],
         antro: ['Antro Vectra Bold', 'sans-serif'],
       },
+ 
     },
   },
   plugins: [],

@@ -11,16 +11,16 @@ new Swiper(".mySwiper", {
   initialSlide: 2,
   loop: true,
   centeredSlides: true,
-  loopedSlides: 1,
   slideToClickedSlide: true,
+  spaceBetween: -50, 
 
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 100,
+    depth: 300,
     modifier: 1,
     slideShadows: false,
-    scale: 0.85,
+    scale: 0.9,
   },
 
   navigation: {
