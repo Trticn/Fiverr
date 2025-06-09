@@ -3,6 +3,10 @@ import { Navigation,EffectCoverflow } from 'swiper/modules';
 
 
 
+//Godina
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
 Swiper.use([Navigation, EffectCoverflow]);
 
 new Swiper(".mySwiper", {
