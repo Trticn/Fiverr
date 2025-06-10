@@ -165,7 +165,7 @@ burger.addEventListener('click', () => {
     document.documentElement.classList.toggle('overflow-hidden');
 });
 
-sidebar.querySelectorAll('a').forEach(link => {
+sidebar.querySelectorAll('.mobile__link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
 
