@@ -45,29 +45,34 @@ new Swiper(".mySwiper", {
 });
 
 
-document.querySelector(".nav__links").addEventListener("click", e => {
-  e.preventDefault();
+const navLinks = document.querySelectorAll('.nav__links')
+navLinks.forEach(navLink=>{
+  navLink.addEventListener("click", e => {
+    e.preventDefault();
+  
+    const link = e.target.closest(".nav__link");
+    console.log(link)
+    if (!link) return;
+    const id = link.getAttribute("href");
+    const target = document.querySelector(id);
+    if (!target) return;
+  
+    const offset = 10;
+  
+    if (target.classList.contains("section--hidden")) {
+      window.scrollTo({
+        top: target.offsetTop - offset,
+        behavior: "smooth"
+      });
+    } else {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
 
-  const link = e.target.closest(".nav__link");
-  if (!link) return;
-  const id = link.getAttribute("href");
-  const target = document.querySelector(id);
-  if (!target) return;
-
-  const offset = 10;
-
-  if (target.classList.contains("section--hidden")) {
-    window.scrollTo({
-      top: target.offsetTop - offset,
-      behavior: "smooth"
-    });
-  } else {
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-  }
-});
+})
 
 
 
