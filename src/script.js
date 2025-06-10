@@ -51,7 +51,6 @@ navLinks.forEach(navLink=>{
     e.preventDefault();
   
     const link = e.target.closest(".nav__link");
-    console.log(link)
     if (!link) return;
     const id = link.getAttribute("href");
     const target = document.querySelector(id);

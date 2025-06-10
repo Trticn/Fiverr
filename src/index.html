@@ -13,23 +13,23 @@
     <script type="module" defer src="./script.js"></script>
   </head>
   <body class="bg-white text-white font-poppins">
-    <header class="w-full bg-[#0A0A0A]  z-[1000] relative">
+    <header id="section-home"  class="w-full bg-[#0A0A0A]  z-[1000] relative">
       <div class="container mx-auto">
-        <nav class="px-7  py-10 flex items-center justify-between relative">
+        <nav  class="px-7  nav__links py-10 flex items-center justify-between relative">
           <div class="flex flex-col items-center font-bold text-white">
             <img class="w-10 h-8 mb-1" src="./images/logo.png" />
             <span class="text-[8px] text-center text-[#BDBDBD] leading-relaxed tracking-widest uppercase">InteriorDesign</span>
           </div>
           
     
-          <ul class="hidden nav__links md:flex space-x-20 text-[#DBDBDB] font-light text-lg">
-            <li><a href="#" class="hover:text-white nav__link">Home</a></li>
+          <ul  class="hidden  md:flex space-x-20 text-[#DBDBDB] font-light text-lg">
+            <li><a href="#section-home" class="hover:text-white nav__link">Home</a></li>
             <li><a href="#section-about" class="hover:text-white nav__link">About</a></li>
             <li><a href="#section-services" class="hover:text-white nav__link">Services</a></li>
           </ul>
     
           <div class="hidden md:block">
-            <a href="#contact" class="bg-[#4D86FF] text-white px-6 py-3 text-lg rounded-full hover:bg-blue-500 transition nav__link">
+            <a href="#section-contact" class="bg-[#4D86FF] text-white px-6 py-3 text-lg rounded-full hover:bg-blue-600 transition nav__link">
               Get in Touch
             </a>
           </div>
@@ -75,7 +75,7 @@
                 </svg>
                 
                
-              <h3>Available Worldwide</h3>
+              <h3 class="text-[#DBDBDB] text-base">Available Worldwide</h3>
             </div>
          
             <div class="flex items-center space-x-2">
@@ -178,7 +178,7 @@
             <li class="px-20">
 
 
-<span class="flex items-center gap-2">
+<span  class="flex items-center gap-2">
   <svg width="194" height="59" viewBox="0 0 194 59" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M179.419 19.714H180.579V19.0301H177.516V19.7437H178.676V22.5388H179.419V19.714ZM184.207 21.2602V22.5388H184.95V19.0301H184.058L183.404 20.3087C183.255 20.606 183.136 20.8736 183.107 20.8736C183.107 20.8736 183.047 20.7547 182.958 20.5763C182.898 20.4871 182.869 20.3979 182.809 20.279L182.155 19.0004H181.263V22.509H181.977V21.2305V19.9816C181.977 19.9816 182.185 20.3682 182.393 20.7547L182.898 21.7359H183.315L183.82 20.7547C183.939 20.5466 184.028 20.3384 184.118 20.1897C184.177 20.0708 184.207 20.0113 184.207 20.0113V21.2602ZM95.8358 34.1055C96.0737 36.3058 97.947 37.3168 100.415 37.3168C102.704 37.3168 104.102 36.4248 104.102 34.5812C104.102 32.4404 102.169 32.0538 100.237 31.697C99.8797 31.6375 99.5229 31.5483 99.1661 31.4889C96.6981 30.9239 93.6057 29.9427 93.6057 26.2556C93.6057 22.9253 96.0737 21.1413 99.9392 21.1413C103.418 21.1413 105.916 22.5685 106.778 25.6906L104.072 26.4043C103.597 24.6499 102.258 23.6389 99.9094 23.6389C97.5901 23.6389 96.49 24.5904 96.49 26.1366C96.49 28.2181 98.5714 28.6641 101.158 29.1696C103.834 29.6751 106.986 30.5968 106.986 34.5812C106.986 38.0602 104.548 39.8442 100.415 39.8442C97.3523 39.8442 93.8436 38.863 93.1002 34.8489L95.8358 34.1055ZM72.0779 21.4981H59.6192V39.5172H72.1672V36.8708H62.444V31.5186H69.8479V28.8425H62.444V24.1444H72.0779V21.4981ZM77.9654 26.1664H78.0248L87.6291 39.5172H90.5133V21.4981H87.6886V30.4481C87.6886 32.2619 87.7183 34.1947 87.748 34.611V34.6704H87.6588L78.0843 21.4981H75.2001V39.5172H78.0248V30.5671C78.0248 28.5154 77.9951 26.5827 77.9654 26.1961V26.1664ZM118.018 39.8442C121.883 39.8442 125.124 37.7926 126.522 34.3731L123.727 33.6297C122.716 35.7409 120.634 37.1979 117.869 37.1979C114.301 37.1979 111.595 34.611 111.595 30.5076C111.595 26.434 114.182 23.8471 117.929 23.8471C121.08 23.8471 122.746 25.6609 123.489 26.9395L126.284 26.1961C125.095 23.4308 122.151 21.171 118.018 21.171C112.695 21.171 108.711 24.9175 108.711 30.4779C108.741 36.1274 112.755 39.8442 118.018 39.8442ZM132.409 35.3246L130.714 39.5172H127.741L135.175 21.4981H138.356L145.76 39.5172H142.727L141.062 35.3246H132.409ZM138.267 28.3965C138.118 28.0099 137.94 27.5936 137.791 27.2071C137.286 25.9285 136.81 24.7391 136.78 24.7391H136.691C136.661 24.7689 135.829 26.8205 135.175 28.4262L133.45 32.7674H140.021L138.267 28.3965ZM160.806 27.326C160.806 23.5795 158.219 21.4981 153.967 21.4981H148.079V39.5172H150.904V33.0945H153.937C158.219 33.0945 160.806 30.9536 160.806 27.326ZM157.951 27.326C157.951 29.4074 156.643 30.5968 153.996 30.5968H150.874V24.085H154.026C156.554 24.085 157.951 25.1851 157.951 27.326ZM163.244 21.4981H175.703V24.1444H166.069V28.8425H173.473V31.4889H166.069V36.8411H175.762V39.4874H163.244V21.4981Z" fill="#1A1A1A"/>
     <path d="M28.5461 7.76071L6.54254 20.4573L14.3032 41.3309L28.5461 51.1136L42.7592 41.3607L45.6434 33.6L28.5461 43.7097L19.5068 38.3575L16.4144 29.1398L28.5461 36.1869L48.4682 24.6796L49.1223 24.2931L50.5496 20.4871L28.5461 7.76071ZM28.5461 28.6938L15.6116 21.2304L28.5461 13.7373L41.4806 21.2007L28.5461 28.6938Z" fill="url(#paint0_linear_52_89)"/>
@@ -996,7 +996,7 @@
 
         <div class="buttons flex justify-center gap-4 mt-8">
           <button
-            class="button-prev cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-white rounded-full border border-gray-300 flex items-center justify-center text-black text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+            class="button-prev cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-white rounded-full border border-gray-300 flex items-center justify-center text-black text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0 hover:bg-gray-100"
           >
           <svg class="w-5 h-4" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.0713 15.0713C7.68087 15.4617 7.04778 15.4615 6.65723 15.0713L0.292975 8.70701C-0.0975488 8.31649 -0.0975489 7.68348 0.292975 7.29295L6.65723 0.928693C7.04778 0.538465 7.68087 0.538267 8.07129 0.928692C8.46172 1.31912 8.46152 1.95221 8.07129 2.34275L3.41407 6.99998L17 6.99998L17 8.99998L3.41407 8.99998L8.0713 13.6572C8.46152 14.0478 8.46172 14.6808 8.0713 15.0713Z" fill="black"/>
@@ -1004,7 +1004,7 @@
             
           </button>
           <button
-            class="button-next cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0"
+            class="button-next hover:bg-blue-600 cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-[#4D86FF] rounded-full flex items-center justify-center text-white text-3xl lg:text-4xl font-bold shadow-lg lg:mb-4 flex-shrink-0 "
           >
           <svg class="w-5 h-4" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.92871 0.928731C9.31914 0.538305 9.95223 0.538503 10.3428 0.92873L16.707 7.29299C17.0976 7.68351 17.0976 8.31653 16.707 8.70705L10.3428 15.0713C9.95223 15.4615 9.31914 15.4617 8.92871 15.0713C8.53829 14.6809 8.53849 14.0478 8.92871 13.6572L13.5859 9.00002L7.31207e-07 9.00002L5.56362e-07 7.00002L13.5859 7.00002L8.92871 2.34279C8.53848 1.95224 8.53829 1.31916 8.92871 0.928731Z" fill="white"/>
@@ -1037,7 +1037,7 @@
                               <h3 class="text-xl font-semibold text-gray-800">Do you work online/remotely?</h3>
                           </div>
                           <div class="flex justify-end items-center">
-                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center ml-3 justify-center rounded-full bg-[#4D86FF]">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex items-center ml-3 justify-center rounded-full bg-[#4D86FF] hover:bg-blue-600">
                               <svg id="icon-1" class="lg:w-5 lg:h-5 w-4 h-4 text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
                               </svg>
@@ -1062,7 +1062,7 @@
                           </div>
                        
                          <div class="flex justify-end items-center">
-                          <div class="lg:w-7 lg:h-7 w-6 h-6 ml-3 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                          <div class="lg:w-7 lg:h-7 w-6 h-6 ml-3 flex items-center justify-center rounded-full bg-[#4D86FF] hover:bg-blue-600">
                             <svg id="icon-2" class="lg:w-5 lg:h-5 w-4 h-4  text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
                             </svg>
@@ -1085,7 +1085,7 @@
                               <h3 class="text-xl font-semibold text-gray-800">What are your payment terms?</h3>
                           </div>
                           <div class="flex justify-end items-center">
-                            <div class="lg:w-7 lg:h-7 w-6 h-6  ml-3 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6  ml-3 flex items-center justify-center rounded-full bg-[#4D86FF] hover:bg-blue-600">
                               <svg id="icon-3" class="lg:w-5 lg:h-5 w-4 h-4  text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
                               </svg>
@@ -1107,7 +1107,7 @@
                               <h3 class="text-lg font-semibold text-gray-800">How long does a project take?</h3>
                           </div>
                           <div class="flex justify-end items-center ">
-                            <div class="lg:w-7 lg:h-7 w-6 h-6 ml-3 flex items-center justify-center rounded-full bg-[#4D86FF]">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 ml-3 flex items-center justify-center rounded-full bg-[#4D86FF] hover:bg-blue-600">
                               <svg id="icon-4" class="lg:w-5 lg:h-5 w-4 h-4  text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
                               </svg>
@@ -1130,7 +1130,7 @@
                               <h3 class="text-xl font-semibold text-gray-800">Do you help with furniture sourcing?</h3>
                           </div>
                           <div class="flex justify-end items-center ">
-                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex ml-3 items-center justify-center rounded-full bg-[#4D86FF]">
+                            <div class="lg:w-7 lg:h-7 w-6 h-6 flex ml-3 items-center justify-center rounded-full bg-[#4D86FF] hover:bg-blue-600">
                               <svg id="icon-5" class="lg:w-5 lg:h-5 w-4 h-4   text-white transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4" />
                               </svg>
@@ -1150,16 +1150,16 @@
   </section>
 
   
-    <footer class="bg-black text-white relative py-40 mt-20 lg:mt-40 w-full"> 
-    <div class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] lg:-translate-y-[80%] z-10">
+    <footer  class="bg-black text-white relative py-40 mt-20 lg:mt-40 w-full"> 
+    <div id="section-contact" class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] lg:-translate-y-[80%] z-10">
   <div class="bg-white rounded-3xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 shadow-gray-500 shadow-2xl py-8 lg:py-20 px-4 sm:px-6 lg:px-16 xl:px-[20%]">
-    <div class="flex flex-col lg:flex-row w-full gap-5 lg:gap-8 xl:gap-12 items-baseline"> <!-- Promenjeno u items-baseline -->
+    <div class="flex flex-col lg:flex-row w-full gap-5 lg:gap-8 xl:gap-12 items-baseline"> 
       <div class="lg:w-1/2 xl:w-2/5">
         <h2 class="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] tracking-wide  text-black font-semibold leading-normal">Let's design something beautiful.</h2>
       </div>
       <div class="lg:w-1/2 xl:w-3/5 flex flex-col">
         <p class="text-[#535353] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] font-normal leading-normal mb-3 sm:mb-4">Whether you need a fresh layout or a full renovation plan - Nikolina is here to help.</p>
-        <button class="bg-[#4D86FF] text-white w-[50%]  py-3.5 rounded-full font-light hover:opacity-80 transition-colors text-sm sm:text-base mt-auto lg:mt-5">
+        <button class="bg-[#4D86FF] text-white w-[50%]  py-3.5 rounded-full font-light hover:bg-blue-600 transition-colors text-sm sm:text-base mt-auto lg:mt-5">
           Get a Consultation
         </button>
       </div>
@@ -1192,7 +1192,7 @@
                     <svg class="w-5 h-5" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.5 9C7.05 9 6.675 8.85 6.3 8.7L0 4.8V9.75C0 11.025 0.975 12 2.25 12H12.75C14.025 12 15 11.025 15 9.75V4.8L8.7 8.7C8.325 8.85 7.95 9 7.5 9ZM12.75 0H2.25C0.975 0 0 0.975 0 2.25V3.075L7.125 7.425C7.35 7.575 7.65 7.575 7.875 7.425L15 3.075V2.25C15 0.975 14.025 0 12.75 0Z" fill="white"/>
                     </svg>
-                    <a href="mailto:vujinovicnikolina5@gmail.com">vujinovicnikolina5@gmail.com</a>
+                    <a href="mailto:vujinovicnikolina5@gmail.com" class="hover:text-[#DBDBDB] cursor-pointer">vujinovicnikolina5@gmail.com</a>
                 </div>
                   <div class="flex items-center justify-center lg:justify-start space-x-2">
                       <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1200,13 +1200,13 @@
                           <path d="M13.7866 11.1361C12.82 10.3094 11.8391 9.80864 10.8844 10.6341L10.3144 11.133C9.89727 11.4951 9.12177 13.1872 6.12345 9.73808C3.12576 6.29332 4.90964 5.75697 5.32736 5.39795L5.90055 4.89843C6.85024 4.07112 6.49184 3.02963 5.80689 1.95755L5.39354 1.30819C4.70546 0.238608 3.95619 -0.463831 3.004 0.362237L2.4895 0.811798C2.06866 1.11837 0.892312 2.1149 0.606966 4.00805C0.263551 6.27958 1.34687 8.88079 3.82882 11.7349C6.30765 14.5902 8.73465 16.0244 11.0337 15.9995C12.9443 15.9789 14.0982 14.9536 14.4591 14.5809L14.9754 14.1307C15.9251 13.3052 15.3351 12.4648 14.3679 11.6362L13.7866 11.1361Z" fill="white"/>
                           </g>
                       </svg>
-                      <a href="tel:+38765123456" class="hover:text-blue-400">+387 65 989 581</a>
+                      <a href="tel:+38765123456" class="hover:text-[#DBDBDB] cursor-pointer">+387 65 989 581</a>
                   </div>
                   <div class="flex items-center justify-center lg:justify-start space-x-2">
                       <svg class="w-5 h-5" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6.75 0C3.0285 0 0 3.0495 0 6.79875C0 12.126 6.1155 17.6265 6.37575 17.8575C6.483 17.9527 6.6165 18 6.75 18C6.8835 18 7.017 17.9527 7.12425 17.8582C7.3845 17.6265 13.5 12.126 13.5 6.79875C13.5 3.0495 10.4715 0 6.75 0ZM6.75 10.5C4.68225 10.5 3 8.81775 3 6.75C3 4.68225 4.68225 3 6.75 3C8.81775 3 10.5 4.68225 10.5 6.75C10.5 8.81775 8.81775 10.5 6.75 10.5Z" fill="white"/>
                       </svg>
-                      <h3>Available Worldwide</h3>
+                      <h3 class="text-white cursor-pointer">Available Worldwide</h3>
                   </div>
                  
               </div>
@@ -1215,15 +1215,15 @@
                   <h3 class="text-base font-medium">Quick Links:</h3>
 
                   <ol class="nav__links space-y-8 text-sm font-normal">
-                    <li><a href="#" class="hover:text-blue-400 nav__link">Home</a></li>
-                    <li><a href="#section-about" class="hover:text-blue-400 nav__link">About</a></li>
-                    <li><a href="#section-services" class="hover:text-blue-400 nav__link">Services</a></li>
+                    <li><a href="#section-home" class="hover:text-[#DBDBDB] nav__link">Home</a></li>
+                    <li><a href="#section-about" class="hover:text-[#DBDBDB] nav__link">About</a></li>
+                    <li><a href="#section-services" class="hover:text-[#DBDBDB] nav__link">Services</a></li>
                   </ol>
               </div>
               </div>
           </div>
       </div>
-        <!-- Social media and copyright - centered at the bottom -->
+    
         <div class="absolute bottom-0 pb-5 pt-15 text-center w-full">
             <div class="flex flex-col items-center">
                 <div class="flex space-x-6 mb-4">
@@ -1236,7 +1236,7 @@
                             <path d="M21.0187 16.6279C19.6141 16.6279 18.4746 17.7675 18.4746 19.172C18.4746 20.5765 19.6141 21.7425 21.0187 21.7425C22.4232 21.7425 23.5627 20.5765 23.5627 19.172C23.5627 17.7675 22.4232 16.6279 21.0187 16.6279Z" fill="white"/>
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/vujinovicnikolina" class="text-gray-400 hover:text-pink-400">
+                    <a href="https://www.instagram.com/vujinovicnikolina" class="text-gray-400 hover:text-white">
                         <span class="sr-only">Instagram</span>
                         <svg class="w-14 h-14" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="28.9991" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
@@ -1245,7 +1245,7 @@
                             <path d="M37.194 21.4047C37.194 22.1918 36.5559 22.83 35.7688 22.83C34.9817 22.83 34.3436 22.1918 34.3436 21.4047C34.3436 20.6176 34.9817 19.9795 35.7688 19.9795C36.5559 19.9795 37.194 20.6176 37.194 21.4047Z" fill="white"/>
                         </svg>
                     </a>
-                    <a href="https://wa.me/38765989581" class="text-gray-400 hover:text-green-500">
+                    <a href="https://wa.me/38765989581" class="text-gray-400 hover:text-white">
                         <span class="sr-only">WhatsApp</span>
                         <svg class="w-14 h-14" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="28.8251" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
