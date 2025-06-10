@@ -23,19 +23,19 @@
     }
     
     .burger-line-1 {
-        @apply w-4;
+        @apply w-5;
     }
     
     .burger-line-2 {
-        @apply w-6;
+        @apply w-7;
     }
     
     .burger-line-3 {
-        @apply w-3;
+        @apply w-4;
     }
     
     .burger-open .burger-line-1 {
-        @apply w-6;
+        @apply w-7;
         transform: rotate(45deg) translate(0.25rem, 0.25rem);
     }
     
@@ -45,7 +45,7 @@
     }
     
     .burger-open .burger-line-3 {
-        @apply w-6;
+        @apply w-7;
         transform: rotate(-45deg) translate(0.25rem, -0.25rem);
     }
 
