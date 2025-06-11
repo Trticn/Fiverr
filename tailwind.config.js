@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'regular'],
+        poppins: ['Poppins', 'sans-serif'],
         antro: ['Antro Vectra Bold', 'sans-serif'],
       },
  
