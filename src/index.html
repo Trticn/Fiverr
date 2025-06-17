@@ -4,27 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./input.css" rel="stylesheet" />
-
-   
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script type="module" defer src="./script.js"></script>
   </head>
-  <body class="bg-white text-white font-poppins">
-
-
+  <body class="bg-white text-white font-poppins overflow-x-hidden">
     <header id="section-home"  class="w-screen bg-[#0A0A0A] relative">
+
       <div class="container mx-auto">
-        <nav  class="px-7  nav__links py-10 flex items-center justify-between relative">
+        <nav  class="px-7 nav__links py-6 flex items-center justify-between relative">
           <div class="flex flex-col items-center font-bold text-white">
-            <img class="w-10 h-8 mb-1" src="./images/logo.png" />
+            <img class="w-12 h-10 mb-1" src="./images/logo.png" />
             <span class="text-[8px] text-center text-[#BDBDBD] leading-relaxed tracking-widest uppercase">InteriorDesign</span>
           </div>
           
     
-          <ul  class="hidden  md:flex space-x-20 text-[#DBDBDB] font-light text-lg">
+          <ul class="hidden md:flex space-x-20 text-[#DBDBDB] font-light text-lg">
             <li><a href="#section-home" class="hover:text-white nav__link">Home</a></li>
             <li><a href="#section-about" class="hover:text-white nav__link">About</a></li>
             <li><a href="#section-services" class="hover:text-white nav__link">Services</a></li>
@@ -38,7 +32,7 @@
     
           <div class="ml-auto md:hidden z-50">
             <button id="burger" class="flex flex-col justify-center items-center space-y-1">
-                <span class="burger-line burger-line-1"></span>
+                <span class="burger-line burger-line-1"></span>	
                 <span class="burger-line burger-line-2"></span>
                 <span class="burger-line burger-line-3"></span>
             </button>
@@ -161,9 +155,9 @@
 </header>
 
     <section
-      class="tool_and_technologies-section bg-white relative z-[0] mt-20 lg:mt-40"
+      class="tool_and_technologies-section flex justify-center bg-white relative z-[0] mt-20 lg:mt-40"
     >
-      <div class="overflow-hidden">
+      <div class="overflow-hidden lg:max-w-5xl">
         <h2 class="text-black font-medium  text-center  text-2xl py-20">Behind the Scenes</h2>
         <div class="technologies flex text-black">
           <ul class="flex items-center justify-center">
@@ -327,10 +321,19 @@
             </div>
           </div>
 
-          <div class="w-full md:w-[90%] lg:w-1/2 relative flex lg:h-auto h-[300px] lg:items-stretch bg-[#4D86FF] rounded-3xl mx-auto"
+          <div class="w-full md:w-[90%] lg:w-1/2 relative flex lg:h-auto h-[300px] lg:items-stretch bg-[#4D86FF] rounded-3xl mx-auto overflow-hidden"
           style="background-image: url('data:image/svg+xml,%3Csvg width=\'208\' height=\'337\' viewBox=\'0 0 208 337\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'...\' fill=\'white\' fill-opacity=\'0.1\'/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right center; background-size: 50%;">
   
-     
+			<svg width="135" height="337" viewBox="0 0 135 337" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-4 h-full scale-125">
+<path d="M-207.536 -36V1.46946H-130.697C-130.647 2.2444 -130.405 3.00231 -129.879 3.57286C-117.61 17.1215 -106.109 34.8513 -94.7585 49.5581C-38.9336 121.874 17.1669 193.986 73.092 266.31V33.4037C73.092 24.8027 65.0658 12.4889 56.7555 10.0363C52.8551 8.88671 41.321 7.3709 37.7129 8.26506C36.7274 8.5035 37.7129 10.3514 36.3515 9.98525V0.626396H134.062V9.14218H114.435C106.525 9.14218 95.6425 24.3173 95.6425 31.709V337H48.4536C44.7035 334.42 41.7719 330 38.8821 326.321C17.9436 299.59 -1.91748 272.016 -22.6138 245.106C-65.0671 189.898 -107.813 134.971 -150.325 79.8232H-168.281V280.796H-154.083V289.312H-168.281V329.336H-117.334V337H-266V329.336H-215.888V289.312L-227.046 289.192C-229.151 288.486 -229.151 281.622 -227.046 280.915L-215.888 280.796V9.13367H-266L-265.165 1.46946H-215.888L-215.011 -35.9574L-207.536 -36ZM-175.798 9.13367H-207.536V72.1505H-175.798V9.13367ZM-136.126 9.13367H-167.029L-168.281 10.411V72.1505H-146.984C-136.619 81.5519 -129.236 93.8658 -120.65 104.911C-69.8361 170.312 -19.3815 236.19 31.19 301.753C38.1222 310.737 45.1211 319.892 51.3768 329.319H73.092V279.076C73.092 278.965 71.7975 279.042 71.0792 278.181C68.9411 275.601 66.7946 272.782 64.7734 270.1C-1.25766 182.387 -69.5521 96.4716 -136.126 9.12516V9.13367ZM-207.536 79.8147V214.364H-175.798V79.8147H-207.536ZM-175.798 221.994H-207.536V280.787H-175.798V221.994ZM-175.798 289.303H-207.536V329.327H-175.798V289.303Z" fill="white" fill-opacity="0.1"/>
+</svg>
+
+
+		<svg width="208" height="337" viewBox="0 0 208 337" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 -right-10 h-full scale-125">
+<path d="M58.4641 -32V5.46946H135.303C135.353 6.2444 135.595 7.00231 136.121 7.57286C148.39 21.1215 159.891 38.8513 171.241 53.5581C227.066 125.874 283.167 197.986 339.092 270.31V37.4037C339.092 28.8027 331.066 16.4889 322.755 14.0363C318.855 12.8867 307.321 11.3709 303.713 12.2651C302.727 12.5035 303.713 14.3514 302.352 13.9853V4.6264H400.062V13.1422H380.435C372.525 13.1422 361.643 28.3173 361.643 35.709V341H314.454C310.704 338.42 307.772 334 304.882 330.321C283.944 303.59 264.083 276.016 243.386 249.106C200.933 193.898 158.187 138.971 115.675 83.8232H97.7186V284.796H111.917V293.312H97.7186V333.336H148.666V341H0V333.336H50.1121V293.312L38.9538 293.192C36.8491 292.486 36.8491 285.622 38.9538 284.915L50.1121 284.796V13.1337H0L0.835202 5.46946H50.1121L50.9891 -31.9574L58.4641 -32ZM90.2018 13.1337H58.4641V76.1505H90.2018V13.1337ZM129.874 13.1337H98.9715L97.7186 14.411V76.1505H119.016C129.381 85.5519 136.764 97.8658 145.35 108.911C196.164 174.312 246.618 240.19 297.19 305.753C304.122 314.737 311.121 323.892 317.377 333.319H339.092V283.076C339.092 282.965 337.798 283.042 337.079 282.181C334.941 279.601 332.795 276.782 330.773 274.1C264.742 186.387 196.448 100.472 129.874 13.1252V13.1337ZM58.4641 83.8147V218.364H90.2018V83.8147H58.4641ZM90.2018 225.994H58.4641V284.787H90.2018V225.994ZM90.2018 293.303H58.4641V333.327H90.2018V293.303Z" fill="white" fill-opacity="0.1"/>
+</svg>
+
+
             <!-- Krug u pozadini -->
             <div 
                 class="absolute left-1/2 bottom-0 -translate-x-1/2 
@@ -650,8 +653,12 @@
             class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
           >
             <div
-              class="bg-[#4D86FF] p-8 rounded-t-md min-h-[310px] text-left pb-10"
+              class="bg-[#4D86FF] p-8 rounded-t-md min-h-[310px] text-left pb-10 relative"
             >
+				<svg width="229" height="337" viewBox="0 0 229 337" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-10">
+					<path d="M117.118 -44.4348C193.737 36.9371 -156.521 106.685 117.118 106.685C336.03 106.685 149.418 287.215 38.7462 391.405" stroke="white" stroke-opacity="0.15" stroke-width="20"/>
+				</svg>
+
               <h3 class="text-white text-3xl font-semibold mb-6">
                 Premium Package
               </h3>
@@ -778,16 +785,16 @@
     </section>
 <div class="relative">
     <section id="section-testimonials" class="mt-10 lg:mt-20 relative section">
-      <div class="container mx-auto">
+      <div class="px-2 lg:px-0">
         <h2
-        class="text-3xl  text-center lg:text-4xl text-gray-800 font-semibold "
+        class="text-3xl text-center lg:text-4xl text-gray-800 font-semibold "
       >
         From our clients
       </h2>
         <div class="swiper mt-10 lg:mt-20 mySwiper relative">
           <div class="swiper-wrapper lg:pb-10 pb-5">
             <div
-            class="swiper-slide bg-white shadow-xl rounded-2xl px-10 py-6 w-full mx-auto min-h-60"
+            class="swiper-slide bg-white border border-gray-200 rounded-lg px-8 py-10 lg:py-14 w-full mx-auto"
           >
               <div class="bg-white relative">
                 <div class="flex items-center mb-4">
@@ -863,7 +870,7 @@
             </div>
 
             <div
-            class="swiper-slide bg-white shadow-xl rounded-2xl px-10 py-6 w-full mx-auto min-h-60"
+            class="swiper-slide bg-white border border-gray-200 rounded-lg px-8 py-10 lg:py-14 w-full mx-auto"
           >
               <div class="bg-white relative">
                 <div class="flex items-center mb-4">
@@ -941,7 +948,7 @@
             </div>
 
             <div
-            class="swiper-slide bg-white shadow-xl rounded-2xl px-10 py-6 w-full mx-auto"
+            class="swiper-slide bg-white border border-gray-200 rounded-lg px-8 py-10 lg:py-14 w-full mx-auto"
           >
               <div class="bg-white relative">
                 <div class="flex items-center mb-4">
@@ -1176,7 +1183,18 @@
   
     <footer  class="bg-black text-white relative py-40 mt-20 lg:mt-40 w-full"> 
     <div id="section-contact" class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] lg:-translate-y-[80%] z-10">
-  <div class="bg-white rounded-3xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 shadow-gray-500 shadow-2xl py-8 lg:py-20 px-4 sm:px-6 lg:px-16 xl:px-[20%]">
+  <div class="bg-white relative rounded-3xl mx-auto flex flex-col md:flex-row justify-between items-center py-8 gap-8 shadow-gray-500 shadow-2xl px-4 sm:px-6 lg:px-16 xl:px-[20%]">
+	<svg width="180" height="331" viewBox="0 0 180 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 h-full hidden lg:block">
+		<path d="M-223.03 -47.499V-5.56778H-132.42C-132.361 -4.70057 -132.075 -3.85241 -131.454 -3.21391C-116.986 11.948 -103.424 31.7891 -90.0397 48.2472C-24.2094 129.174 41.946 209.873 107.895 290.81V30.1691C107.895 20.544 98.4297 6.76382 88.63 4.01923C84.0305 2.7327 70.4291 1.03639 66.1744 2.03702C65.0122 2.30386 66.1744 4.37183 64.569 3.96205V-6.51124H179.792V3.01859H156.647C147.32 3.01859 134.487 20.0008 134.487 28.2727V369.917H78.8401C74.4179 367.029 70.9609 362.083 67.5532 357.967C42.8619 328.052 19.4411 297.195 -4.96457 267.081C-55.0267 205.299 -105.434 143.831 -155.565 82.1162H-176.74V307.02H-159.997V316.55H-176.74V361.34H-116.661V369.917H-291.973V361.34H-232.879V316.55L-246.037 316.417C-248.519 315.626 -248.519 307.945 -246.037 307.154L-232.879 307.02V3.00907H-291.973L-290.988 -5.56778H-232.879L-231.845 -47.4514L-223.03 -47.499ZM-185.604 3.00907H-223.03V73.5298H-185.604V3.00907ZM-138.822 3.00907H-175.263L-176.74 4.43854V73.5298H-151.625C-139.403 84.0507 -130.696 97.8309 -120.571 110.191C-60.6505 183.38 -1.15298 257.103 58.4824 330.473C66.657 340.527 74.9104 350.772 82.2873 361.321H107.895V305.095C107.895 304.971 106.368 305.057 105.521 304.094C103 301.207 100.468 298.053 98.0849 295.051C20.2192 196.893 -60.3156 100.747 -138.822 2.99954V3.00907ZM-223.03 82.1066V232.678H-185.604V82.1066H-223.03ZM-185.604 241.217H-223.03V307.011H-185.604V241.217ZM-185.604 316.54H-223.03V361.331H-185.604V316.54Z" fill="#E5E5E5" fill-opacity="0.5"/>
+	</svg>
+
+	<svg width="144" height="331" viewBox="0 0 144 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 right-0 h-full hidden lg:block">
+		<path d="M69.8684 -34.2441V7.6871H160.479C160.538 8.55432 160.823 9.40247 161.444 10.041C175.912 25.2029 189.474 45.044 202.859 61.502C268.689 142.429 334.844 223.128 400.793 304.065V43.424C400.793 33.7988 391.328 20.0187 381.528 17.2741C376.929 15.9876 363.328 14.2913 359.073 15.2919C357.911 15.5587 359.073 17.6267 357.467 17.2169V6.74364H472.69V16.2735H449.545C440.218 16.2735 427.385 33.2556 427.385 41.5275V383.172H371.738C367.316 380.284 363.859 375.338 360.452 371.221C335.76 341.307 312.34 310.45 287.934 280.336C237.872 218.554 187.465 157.086 137.334 95.3711H116.158V320.275H132.902V329.805H116.158V374.595H176.237V383.172H0.925781V374.595H60.0194V329.805L46.8613 329.671C44.3793 328.88 44.3793 321.199 46.8613 320.408L60.0194 320.275V16.264H0.925781L1.91068 7.6871H60.0194L61.0536 -34.1965L69.8684 -34.2441ZM107.294 16.264H69.8684V86.7847H107.294V16.264ZM154.077 16.264H117.636L116.158 17.6934V86.7847H141.273C153.496 97.3056 162.202 111.086 172.327 123.446C232.248 196.635 291.745 270.358 351.381 343.728C359.555 353.782 367.809 364.026 375.186 374.576H400.793V318.35C400.793 318.226 399.266 318.312 398.419 317.349C395.898 314.462 393.367 311.307 390.983 308.306C313.118 210.148 232.583 114.002 154.077 16.2544V16.264ZM69.8684 95.3615V245.933H107.294V95.3615H69.8684ZM107.294 254.472H69.8684V320.265H107.294V254.472ZM107.294 329.795H69.8684V374.586H107.294V329.795Z" fill="#E5E5E5" fill-opacity="0.5"/>
+	</svg>
+
+
+
+
     <div class="flex flex-col lg:flex-row w-full gap-5 lg:gap-8 xl:gap-12 items-baseline"> 
       <div class="lg:w-1/2 xl:w-2/5">
         <h2 class="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] tracking-wide  text-black font-semibold leading-normal">Let's design something beautiful.</h2>
