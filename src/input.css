@@ -82,5 +82,7 @@
         transition: transform 1s, opacity 1s;
     }
 
-    
-}
+    .swiper {
+		padding: 0 10px 30px !important;
+	 }
+}	
