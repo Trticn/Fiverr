@@ -13,7 +13,6 @@ function initSwiper() {
     loop: true,
     centeredSlides: true,
     slideToClickedSlide: true,
-    spaceBetween: -50,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -30,10 +29,12 @@ function initSwiper() {
       1024: {
         slidesPerView: 3,
         centeredSlides: true,
+        spaceBetween:-50
       },
       0: {
         slidesPerView: 1,
         centeredSlides: false,
+        spaceBetween:80
       },
     },
   });
