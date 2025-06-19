@@ -85,4 +85,14 @@
     .swiper {
 		padding: 0 10px 30px !important;
 	 }
+
+   
+        .lazy-img {
+    filter: blur(20px);
+        }
+
+
+    img {
+            transition: filter 0.5s;
+          }
 }	
