@@ -170,28 +170,59 @@ function initMobileMenu() {
 
 
 
-const imgTargets = document.querySelectorAll('img[data-src]');
+const sofa = new URL('./images/loaded/sofa.png', import.meta.url).href;
+const portret = new URL('./images/loaded/portret.png', import.meta.url).href;
+const sketch1 = new URL('./images/loaded/sketch-1.png', import.meta.url).href;
+const sketch2 = new URL('./images/loaded/sketch-2.png', import.meta.url).href;
+const imageMap = [{
+  key:'sofa',
+  url:sofa
+},
+{
+  key:'portret',
+  url:portret
+},
+{
+  key:'sketch-1',
+  url:sketch1
+},
+{
+  key:'sketch-2',
+  url:sketch2
+}
+
+]
+const imgTargets = document.querySelectorAll('img[data-src-key]');
 
 const loadImg = function (entries, observer) {
-  const [entry] = entries;
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
 
-  if (!entry.isIntersecting) return;
+    const key = entry.target.dataset.srcKey;
+    const targetImage = imageMap.find(image => image.key === key);
 
-  entry.target.src = entry.target.dataset.src;
-  console.log(entry.target.dataset.src);
-  entry.target.addEventListener('load', function () {
-    entry.target.classList.remove('lazy-img');
+    if (targetImage) {
+      entry.target.src = targetImage.url;
+      entry.target.addEventListener('load', function () {
+        entry.target.classList.remove('lazy-img');
+      });
+      observer.unobserve(entry.target);
+    } else {
+      console.warn(`Nema slike za ključ: ${key}`);
+    }
   });
-
-  observer.unobserve(entry.target);
 };
+
 
 const imgObserver = new IntersectionObserver(loadImg, {
   root: null,
   threshold: 0,
-  rootMargin: '300px',
+  rootMargin: '200px',
 });
 
+function initLazyLoadingImages(){
+  imgTargets.forEach(img => imgObserver.observe(img));
+}
 
 
 
@@ -199,12 +230,12 @@ const imgObserver = new IntersectionObserver(loadImg, {
 //Inicijalizacija 
 function initUI() {
   document.getElementById("year").textContent = new Date().getFullYear();
-  imgTargets.forEach(img => imgObserver.observe(img));
   initSwiper();
   initNavLinks();
   initSectionReveal();
-  initFAQ();
   initMobileMenu();
+  initFAQ();
+  initLazyLoadingImages();
 }
 
 
