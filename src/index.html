@@ -139,19 +139,16 @@
   
 
 
-      <img
-      src="./images/lazy/sofa-lazy.png"
-      data-src-key="sofa"
-      alt="Interior Design"
-      class="w-full object-contain 
-       xl:mx-0 
-        pl-0
-         md:pl-10
-         xl:pl-0 xl:w-[50%] 2xl:w-[55%] 
-        xl:absolute xl:right-0 xl:bottom-0 
-        bg-transparent z-10 pointer-events-none 
-        translate-y-[20%] xl:translate-y-[20%] lazy-img" 
-      />
+      <div class="relative xl:w-[50%] 2xl:w-[55%] xl:absolute xl:right-0 xl:bottom-0 pointer-events-none  z-10">
+        <img
+          src="./images/lazy/sofa-lazy.png"
+          data-src-key="sofa"
+          alt="Interior Design"
+          class="w-full object-contain xl:mx-0 pl-0 md:pl-10 xl:pl-0 translate-y-[20%] xl:translate-y-[20%] lazy-img"
+  
+        />
+ 
+      </div>
 
   </div>
 </header>
@@ -489,13 +486,13 @@
           class="flex flex-col lg:flex-row px-5 items-start justify-between gap-4"
         >
           <div
-            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+            class="block w-full text-base rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
           >
           
             <div
               class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
             >
-              <h3 class="text-white text-3xl font-semibold tracking-wider mb-6">
+              <h3 class="text-white text-[32px] font-medium tracking-wider mb-6">
                 Starter Package
               </h3>
               <ul class="text-white list-inside font-light space-y-6">
@@ -564,18 +561,18 @@
             </div>
 
             <div
-              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-[26px]"
             >
               €190
             </div>
           </div>
           <div
-            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+            class="block w-full rounded-3xl text-base shadow-2xl overflow-hidden leading-relaxed"
           >
             <div
               class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
             >
-              <h3 class="text-white text-3xl font-semibold tracking-wider mb-6">
+              <h3 class="text-white text-[32px] font-medium tracking-wider mb-6">
                 Essential Package
               </h3>
               <ul class="text-white font-light list-inside space-y-6">
@@ -644,14 +641,14 @@
             </div>
 
             <div
-              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-[26px]"
             >
               €390
             </div>
           </div>
 
           <div
-            class="block w-full rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
+            class="block w-full text-base tracking-wider rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
           >
             <div
               class="bg-[#4D86FF] p-8 rounded-t-md min-h-[310px] text-left pb-10 relative"
@@ -661,7 +658,7 @@
 					<path d="M117.118 -44.4348C193.737 36.9371 -156.521 106.685 117.118 106.685C336.03 106.685 149.418 287.215 38.7462 391.405" stroke="white" stroke-opacity="0.15" stroke-width="20"/>
 				</svg>
       </div>
-              <h3 class="text-white text-3xl font-semibold mb-6">
+              <h3 class="text-white text-[32px] font-semibold mb-6">
                 Premium Package
               </h3>
               <ul class="text-white list-inside font-light space-y-6">
@@ -727,7 +724,7 @@
             </div>
 
             <div
-              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-xl"
+              class="bg-white p-6 rounded-b-md text-black text-center font-semibold text-[26px]"
             >
               €490
             </div>
@@ -755,13 +752,16 @@
             </div>
             <div class="flex-1 flex flex-col">
               <div class="hidden lg:flex  lg:justify-end gap-3">
+                <div>
                 <svg class="w-10 h-8 lg:w-12 lg:h-10" viewBox="0 0 53 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.51211 36.8877C2.63711 33.7252 0.912109 30.2752 0.912109 24.5252C0.912109 14.4627 8.09961 5.5502 18.1621 0.950195L20.7496 4.6877C11.2621 9.8627 9.24961 16.4752 8.67461 20.7877C10.1121 19.9252 12.1246 19.6377 14.1371 19.9252C19.3121 20.5002 23.3371 24.5252 23.3371 29.9877C23.3371 32.5752 22.1871 35.1627 20.4621 37.1752C18.4496 39.1877 16.1496 40.0502 13.2746 40.0502C10.1121 40.0502 7.23711 38.6127 5.51211 36.8877ZM34.2621 36.8877C31.3871 33.7252 29.6621 30.2752 29.6621 24.5252C29.6621 14.4627 36.8496 5.5502 46.9121 0.950195L49.4996 4.6877C40.0121 9.8627 37.9996 16.4752 37.4246 20.7877C38.8621 19.9252 40.8746 19.6377 42.8871 19.9252C48.0621 20.5002 52.0871 24.5252 52.0871 29.9877C52.0871 32.5752 50.9371 35.1627 49.2121 37.1752C47.4871 39.1877 44.8996 40.0502 42.0246 40.0502C38.8621 40.0502 35.9871 38.6127 34.2621 36.8877Z" fill="white"/>
                 </svg>
+              </div>
+              <div>
                 <h2 class="text-[32px] font-antro font-bolder opacity-80 text-center lg:text-right">
                   Each line is a thought I <br/> didn't say out loud.
                 </h2>
-                
+              </div>
               </div>
             </div>
           </div>
