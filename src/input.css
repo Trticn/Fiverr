@@ -20,36 +20,41 @@
 @layer components {
 
     .burger-line {
-        @apply block h-0.5 bg-white rounded transform transition-all duration-300 origin-center;
-    }
-    
-    .burger-line-1 {
-        @apply w-5;
-    }
-    
-    .burger-line-2 {
-        @apply w-7;
-    }
-    
-    .burger-line-3 {
-        @apply w-4;
-    }
-    
-    .burger-open .burger-line-1 {
-        @apply w-7;
-        transform: rotate(45deg) translate(0.25rem, 0.25rem);
-    }
-    
-    .burger-open .burger-line-2 {
+        @apply block h-1 bg-white rounded transform transition-all duration-300 origin-center;
+      }
+      
+      /* Prva linija skroz desno */
+      .burger-line-1 {
+        @apply w-5 self-end;
+      }
+      
+      /* Druga linija široka i centrirana */
+      .burger-line-2 {
+        @apply w-8 self-center;
+      }
+      
+      /* Treća linija skroz levo */
+      .burger-line-3 {
+        @apply w-5 self-start;
+      }
+      
+      /* Kada je otvoren - pravi X */
+      .burger-open .burger-line-1 {
+        @apply w-8;
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+      
+      .burger-open .burger-line-2 {
         @apply opacity-0;
         transform: scale(0);
-    }
-    
-    .burger-open .burger-line-3 {
-        @apply w-7;
-        transform: rotate(-45deg) translate(0.25rem, -0.25rem);
-    }
-
+      }
+      
+      .burger-open .burger-line-3 {
+        @apply w-8;
+        transform: rotate(-45deg) translate(9px, -9px);
+      }
+      
+      
     .technologies {
         user-select: none;
         --gap: 20px;
