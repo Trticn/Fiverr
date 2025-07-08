@@ -214,10 +214,11 @@ const loadImg = function (entries, observer) {
 };
 
 
+
 const imgObserver = new IntersectionObserver(loadImg, {
   root: null,
   threshold: 0,
-  rootMargin: '200px',
+  rootMargin: '300px', // Dobar je za većinu slučajeva lazy loadinga
 });
 
 function initLazyLoadingImages(){
