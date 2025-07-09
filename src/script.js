@@ -95,24 +95,41 @@ function initSectionReveal() {
 function initFAQ() {
   const faqItems = document.querySelectorAll(".faq-item");
 
-  function toggleFAQ(id) {
+  function openFAQ(id, item) {
     const content = document.getElementById(`content-${id}`);
     const icon = document.getElementById(`icon-${id}`);
     const path = icon.querySelector('path');
+    content.style.maxHeight = content.scrollHeight + "px";
+    path.setAttribute("d", "M20 12H4");
+    item.classList.add("active");
+  }
 
-    if (content.style.maxHeight === "0px" || content.style.maxHeight === "") {
-      content.style.maxHeight = content.scrollHeight + "px";
-      path.setAttribute("d", "M20 12H4");
-    } else {
-      content.style.maxHeight = "0px";
-      path.setAttribute("d", "M12 4v16m8-8H4");
-    }
+  function closeFAQ(id, item) {
+    const content = document.getElementById(`content-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    const path = icon.querySelector('path');
+    content.style.maxHeight = "0px";
+    path.setAttribute("d", "M12 4v16m8-8H4");
+    item.classList.remove("active");
   }
 
   faqItems.forEach((item, index) => {
+    const id = index + 1;
+    const content = document.getElementById(`content-${id}`);
+    if (content) content.style.maxHeight = "0px";
+    item.classList.remove("active");
+
     item.addEventListener("click", () => {
-      const id = index + 1;
-      toggleFAQ(id);
+      const isActive = item.classList.contains("active");
+
+      faqItems.forEach((otherItem, otherIndex) => {
+        const otherId = otherIndex + 1;
+        closeFAQ(otherId, otherItem);
+      });
+
+      if (!isActive) {
+        openFAQ(id, item);
+      }
     });
   });
 }
