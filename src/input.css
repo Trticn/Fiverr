@@ -41,7 +41,7 @@
       /* Kada je otvoren - pravi X */
       .burger-open .burger-line-1 {
         @apply w-8;
-        transform: rotate(45deg) translate(4px, 4px);
+        transform: rotate(45deg) translate(5px, 4px);
       }
       
       .burger-open .burger-line-2 {

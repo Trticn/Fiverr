@@ -19,19 +19,22 @@
           </div>
 
     
-          <ul class="hidden md:flex space-x-20 text-[#DBDBDB] font-light text-lg">
+          <ul class="hidden lg:flex space-x-20 text-[#DBDBDB] font-light text-lg">
             <li><a href="#section-home" class="hover:text-white nav__link">Home</a></li>
             <li><a href="#section-about" class="hover:text-white nav__link">About</a></li>
             <li><a href="#section-services" class="hover:text-white nav__link">Services</a></li>
+            <li><a href="#section-home" class="hover:text-white nav__link">Blogs</a></li>
+            <li><a href="#section-faqs" class="hover:text-white nav__link">FAQs</a></li>
+
           </ul>
     
-          <div class="hidden md:block">
+          <div class="hidden lg:block">
             <a href="#section-contact" class="bg-[#4D86FF] text-white px-6 py-3 text-lg rounded-full hover:bg-blue-600 transition nav__link">
               Get in Touch
             </a>
           </div>
     
-          <div class="ml-auto md:hidden z-50">
+          <div class="ml-auto lg:hidden z-50">
             <button id="burger" class="flex flex-col justify-center items-center space-y-1.5">
               <span class="burger-line burger-line-1"></span>	
               <span class="burger-line burger-line-2"></span>
@@ -42,7 +45,7 @@
         </nav>
       </div>
       
-      <div id="mobileSidebar" class="fixed top-16 mt-10   right-0  w-full bg-[#0A0A0A] z-40 h-[calc(100vh-64px)] translate-x-full opacity-0 invisible transition-all duration-300 ease-in-out md:hidden flex flex-col text-xl font-light px-6 py-10 text-[#DBDBDB]">
+      <div id="mobileSidebar" class="fixed top-16 mt-10   right-0  w-full bg-[#0A0A0A] z-40 h-[calc(100vh-64px)] translate-x-full opacity-0 invisible transition-all duration-300 ease-in-out lg:hidden flex flex-col text-xl font-light px-6 py-10 text-[#DBDBDB]">
         <div class="py-15">
         <div class="flex flex-col text-base items-center space-y-6">
             <h3 class="text-white text-lg font-normal tracking-wide mb-3">Quick Links:</h3>
@@ -109,47 +112,54 @@
     class="hero-section w-full flex flex-col pt-0 md:pt-20 lg:pt-30 pb-0 md:pb-5 xl:pb-40 xl:flex-row relative overflow-visible"
   >
 
-    <div class="container mx-auto px-7 pt-10 md:pt-0 pb-0 2xl:pb-20  relative z-10">
-      <div class="w-full xl:w-[50%] 2xl:w-[45%]">
-        <h1
-        class="text-[42px] md:[text-52px] lg:text-[62px] leading-[120%]  font-semibold tracking-wide text-white"
+  <div class="container mx-auto px-7 pt-10 md:pt-0 pb-0 2xl:pb-20 relative z-10">
+   
+    <div class="absolute scale-110  -top-10  -left-10 w-full xl:w-[50%]  translate-y-1/3 lg:translate-y-0 h-full rounded-full bg-[#4D86FF] blur-3xl opacity-25 pointer-events-none z-0"></div>
+  
+
+    <div class="relative z-10 w-full xl:w-[50%] 2xl:w-[45%]">
+      <h1
+        class="text-[42px] md:[text-52px] lg:text-[62px] leading-[120%] font-semibold tracking-wide text-white"
       >
         Designing Spaces That Feel Like Home
       </h1>
-      
-        <p
-          class="text-[#BDBDBD] text-base md:text-lg font-light mt-3 leading-relaxed"
+  
+      <p
+        class="text-[#BDBDBD] text-base md:text-lg font-light mt-3 leading-relaxed"
+      >
+        Nikolina Vujinović crafts harmonious interiors and architectural
+        concepts tailored to your lifestyle.
+      </p>
+  
+      <div class="flex flex-col pr-20 md:pr-20 text-base mt-6 sm:flex-row gap-4 font-medium text-white">
+        <button
+          class="w-full bg-[#4D86FF] cursor-pointer px-6 py-3.5 rounded-full hover:bg-blue-600 transition"
         >
-          Nikolina Vujinović crafts harmonious interiors and architectural
-          concepts tailored to your lifestyle.
-        </p>
-        <div class="flex flex-col  pr-20 md:pr-20  text-base  mt-6  sm:flex-row gap-4 font-medium text-white ">
-          <button
-            class="w-full bg-[#4D86FF] cursor-pointer px-6 py-3.5 rounded-full hover:bg-blue-600 transition"
-          >
-            Get a Consultation
-          </button>
-          <button
-            class="w-full bg-[#0A0A0A] cursor-pointer border border-white px-6 py-3.5 rounded-full hover:bg-white/10 transition"
-          >
-            View Portfolio
-          </button>
-        </div>
+          Get a Consultation
+        </button>
+        <button
+          class="w-full bg-[#0A0A0A] cursor-pointer border border-white px-6 py-3.5 rounded-full hover:bg-white/10 transition"
+        >
+          View Portfolio
+        </button>
       </div>
     </div>
+  </div>
+  
   
 
 
-      <div class="relative xl:w-[50%] 2xl:w-[55%] xl:absolute xl:right-0 xl:bottom-0 pointer-events-none  z-10">
-        <div class="shadow-[0_20px_100px_-10px_rgba(0,0,0,0.8)] md:shadow-[0_40px_150px_-20px_rgba(0,0,0,0.8)] xl:shadow-[0_60px_150px_-30px_rgba(0,0,0,0.8)] inline-block">
+      <div class="relative xl:w-[50%] 2xl:w-[55%] xl:absolute xl:right-0 xl:bottom-0 pointer-events-none z-10">
+        <div class="relative w-full">
           <img
             src="./images/lazy/sofa-lazy.png"
             data-src-key="sofa"
             alt="Interior Design"
-            class="w-full object-contain translate-y-[20%] lazy-img"
+            class="w-full object-contain translate-y-[20%] lazy-img relative z-10 drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
           />
+          <!-- Extra visible shadow at the bottom of the image -->
+          <div class="absolute left-0 right-0 bottom-0 z-0 pointer-events-none bg-gradient-to-b from-transparent to-black/40 rounded-b-[32px] blur-md"></div>
         </div>
- 
       </div>
 
   </div>
@@ -494,7 +504,7 @@
           >
           
             <div
-              class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
+              class="bg-black min-h-[310px] px-5 py-8 rounded-t-md text-left pb-10"
             >
               <h3 class="text-white text-[32px] font-medium tracking-wider mb-6">
                 Starter Package
@@ -574,7 +584,7 @@
             class="block w-full rounded-3xl text-base shadow-2xl overflow-hidden leading-relaxed"
           >
             <div
-              class="bg-black min-h-[310px] p-8 rounded-t-md text-left pb-10"
+              class="bg-black min-h-[310px] px-5 py-8 rounded-t-md text-left pb-10"
             >
               <h3 class="text-white text-[32px] font-medium tracking-wider mb-6">
                 Essential Package
@@ -655,7 +665,7 @@
             class="block w-full text-base tracking-wider rounded-3xl shadow-2xl overflow-hidden leading-relaxed"
           >
             <div
-              class="bg-[#4D86FF] p-8 rounded-t-md min-h-[310px] text-left pb-10 relative"
+              class="bg-[#4D86FF] px-5 py-8 rounded-t-md min-h-[310px] text-left pb-10 relative"
             >
             <div>
 				<svg width="229" height="337" viewBox="0 0 229 337" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-10">
@@ -806,7 +816,7 @@
         </div>
       </div>
     </section>
-<div class="relative">
+
     <section id="section-testimonials" class="mt-10 lg:mt-20 relative section">
       <div>
         <h2
@@ -1069,8 +1079,9 @@
       </div>
     </section>
 
-    <section class="faq mt-10 pt-10 pb-40 section">
-      <div class="container mx-auto pb-5 lg:pb-20">
+    <section id="section-faqs">
+    <div class="faq mt-10 pt-10  pb-40 section">
+      <div  class="container mx-auto pb-5 lg:pb-20">
           <div class="max-w-5xl mx-auto">
              
               <div class="text-center  px-6 mb-10">
@@ -1201,147 +1212,154 @@
               </div>
           </div>
       </div>
-  </section>
-
+    </div>
+</section>
   
-    <footer  class="bg-black text-white relative py-40 mt-20 lg:mt-40 w-full"> 
-    <div id="section-contact" class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] lg:-translate-y-[80%] z-10">
-  <div class="bg-white relative rounded-3xl mx-auto flex flex-col md:flex-row justify-between py-10 lg:py-20 px-8 lg:px-16 xl:px-[20%] shadow-[0_-6px_12px_-4px_rgba(100,116,139,0.1),-10px_0_20px_-2px_rgba(0,0,0,0.2),10px_0_20px_-2px_rgba(0,0,0,0.2)]">
-    <div>
-    <svg width="180" height="331" viewBox="0 0 168 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 top-0 left-0 h-full hidden lg:block">
-		<path d="M-223.03 -47.499V-5.56778H-132.42C-132.361 -4.70057 -132.075 -3.85241 -131.454 -3.21391C-116.986 11.948 -103.424 31.7891 -90.0397 48.2472C-24.2094 129.174 41.946 209.873 107.895 290.81V30.1691C107.895 20.544 98.4297 6.76382 88.63 4.01923C84.0305 2.7327 70.4291 1.03639 66.1744 2.03702C65.0122 2.30386 66.1744 4.37183 64.569 3.96205V-6.51124H179.792V3.01859H156.647C147.32 3.01859 134.487 20.0008 134.487 28.2727V369.917H78.8401C74.4179 367.029 70.9609 362.083 67.5532 357.967C42.8619 328.052 19.4411 297.195 -4.96457 267.081C-55.0267 205.299 -105.434 143.831 -155.565 82.1162H-176.74V307.02H-159.997V316.55H-176.74V361.34H-116.661V369.917H-291.973V361.34H-232.879V316.55L-246.037 316.417C-248.519 315.626 -248.519 307.945 -246.037 307.154L-232.879 307.02V3.00907H-291.973L-290.988 -5.56778H-232.879L-231.845 -47.4514L-223.03 -47.499ZM-185.604 3.00907H-223.03V73.5298H-185.604V3.00907ZM-138.822 3.00907H-175.263L-176.74 4.43854V73.5298H-151.625C-139.403 84.0507 -130.696 97.8309 -120.571 110.191C-60.6505 183.38 -1.15298 257.103 58.4824 330.473C66.657 340.527 74.9104 350.772 82.2873 361.321H107.895V305.095C107.895 304.971 106.368 305.057 105.521 304.094C103 301.207 100.468 298.053 98.0849 295.051C20.2192 196.893 -60.3156 100.747 -138.822 2.99954V3.00907ZM-223.03 82.1066V232.678H-185.604V82.1066H-223.03ZM-185.604 241.217H-223.03V307.011H-185.604V241.217ZM-185.604 316.54H-223.03V361.331H-185.604V316.54Z" fill="#E5E5E5" fill-opacity="0.5"/>
-	</svg>
+<footer class="bg-black  text-white relative py-40 mt-20 lg:mt-40 w-full"> 
+  <div id="section-contact" class="absolute px-5 container mx-auto left-0 right-0 top-0 -translate-y-[50%] lg:-translate-y-[80%] z-10">
+<div class="bg-white relative rounded-3xl mx-auto flex flex-col md:flex-row justify-between py-10 lg:py-20 px-8 lg:px-16 xl:px-[20%] shadow-[0_-6px_12px_-4px_rgba(100,116,139,0.1),-10px_0_20px_-2px_rgba(0,0,0,0.2),10px_0_20px_-2px_rgba(0,0,0,0.2)]">
+  <div>
+  <svg width="180" height="331" viewBox="0 0 168 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 top-0 left-0 h-full hidden lg:block">
+  <path d="M-223.03 -47.499V-5.56778H-132.42C-132.361 -4.70057 -132.075 -3.85241 -131.454 -3.21391C-116.986 11.948 -103.424 31.7891 -90.0397 48.2472C-24.2094 129.174 41.946 209.873 107.895 290.81V30.1691C107.895 20.544 98.4297 6.76382 88.63 4.01923C84.0305 2.7327 70.4291 1.03639 66.1744 2.03702C65.0122 2.30386 66.1744 4.37183 64.569 3.96205V-6.51124H179.792V3.01859H156.647C147.32 3.01859 134.487 20.0008 134.487 28.2727V369.917H78.8401C74.4179 367.029 70.9609 362.083 67.5532 357.967C42.8619 328.052 19.4411 297.195 -4.96457 267.081C-55.0267 205.299 -105.434 143.831 -155.565 82.1162H-176.74V307.02H-159.997V316.55H-176.74V361.34H-116.661V369.917H-291.973V361.34H-232.879V316.55L-246.037 316.417C-248.519 315.626 -248.519 307.945 -246.037 307.154L-232.879 307.02V3.00907H-291.973L-290.988 -5.56778H-232.879L-231.845 -47.4514L-223.03 -47.499ZM-185.604 3.00907H-223.03V73.5298H-185.604V3.00907ZM-138.822 3.00907H-175.263L-176.74 4.43854V73.5298H-151.625C-139.403 84.0507 -130.696 97.8309 -120.571 110.191C-60.6505 183.38 -1.15298 257.103 58.4824 330.473C66.657 340.527 74.9104 350.772 82.2873 361.321H107.895V305.095C107.895 304.971 106.368 305.057 105.521 304.094C103 301.207 100.468 298.053 98.0849 295.051C20.2192 196.893 -60.3156 100.747 -138.822 2.99954V3.00907ZM-223.03 82.1066V232.678H-185.604V82.1066H-223.03ZM-185.604 241.217H-223.03V307.011H-185.604V241.217ZM-185.604 316.54H-223.03V361.331H-185.604V316.54Z" fill="#E5E5E5" fill-opacity="0.5"/>
+</svg>
 </div>
 <div>
-	<svg width="144" height="331" viewBox="0 0 144 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 top-0 right-0 h-full hidden lg:block">
-		<path d="M69.8684 -34.2441V7.6871H160.479C160.538 8.55432 160.823 9.40247 161.444 10.041C175.912 25.2029 189.474 45.044 202.859 61.502C268.689 142.429 334.844 223.128 400.793 304.065V43.424C400.793 33.7988 391.328 20.0187 381.528 17.2741C376.929 15.9876 363.328 14.2913 359.073 15.2919C357.911 15.5587 359.073 17.6267 357.467 17.2169V6.74364H472.69V16.2735H449.545C440.218 16.2735 427.385 33.2556 427.385 41.5275V383.172H371.738C367.316 380.284 363.859 375.338 360.452 371.221C335.76 341.307 312.34 310.45 287.934 280.336C237.872 218.554 187.465 157.086 137.334 95.3711H116.158V320.275H132.902V329.805H116.158V374.595H176.237V383.172H0.925781V374.595H60.0194V329.805L46.8613 329.671C44.3793 328.88 44.3793 321.199 46.8613 320.408L60.0194 320.275V16.264H0.925781L1.91068 7.6871H60.0194L61.0536 -34.1965L69.8684 -34.2441ZM107.294 16.264H69.8684V86.7847H107.294V16.264ZM154.077 16.264H117.636L116.158 17.6934V86.7847H141.273C153.496 97.3056 162.202 111.086 172.327 123.446C232.248 196.635 291.745 270.358 351.381 343.728C359.555 353.782 367.809 364.026 375.186 374.576H400.793V318.35C400.793 318.226 399.266 318.312 398.419 317.349C395.898 314.462 393.367 311.307 390.983 308.306C313.118 210.148 232.583 114.002 154.077 16.2544V16.264ZM69.8684 95.3615V245.933H107.294V95.3615H69.8684ZM107.294 254.472H69.8684V320.265H107.294V254.472ZM107.294 329.795H69.8684V374.586H107.294V329.795Z" fill="#E5E5E5" fill-opacity="0.5"/>
-	</svg>
+<svg width="144" height="331" viewBox="0 0 144 331" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute z-0 top-0 right-0 h-full hidden lg:block">
+  <path d="M69.8684 -34.2441V7.6871H160.479C160.538 8.55432 160.823 9.40247 161.444 10.041C175.912 25.2029 189.474 45.044 202.859 61.502C268.689 142.429 334.844 223.128 400.793 304.065V43.424C400.793 33.7988 391.328 20.0187 381.528 17.2741C376.929 15.9876 363.328 14.2913 359.073 15.2919C357.911 15.5587 359.073 17.6267 357.467 17.2169V6.74364H472.69V16.2735H449.545C440.218 16.2735 427.385 33.2556 427.385 41.5275V383.172H371.738C367.316 380.284 363.859 375.338 360.452 371.221C335.76 341.307 312.34 310.45 287.934 280.336C237.872 218.554 187.465 157.086 137.334 95.3711H116.158V320.275H132.902V329.805H116.158V374.595H176.237V383.172H0.925781V374.595H60.0194V329.805L46.8613 329.671C44.3793 328.88 44.3793 321.199 46.8613 320.408L60.0194 320.275V16.264H0.925781L1.91068 7.6871H60.0194L61.0536 -34.1965L69.8684 -34.2441ZM107.294 16.264H69.8684V86.7847H107.294V16.264ZM154.077 16.264H117.636L116.158 17.6934V86.7847H141.273C153.496 97.3056 162.202 111.086 172.327 123.446C232.248 196.635 291.745 270.358 351.381 343.728C359.555 353.782 367.809 364.026 375.186 374.576H400.793V318.35C400.793 318.226 399.266 318.312 398.419 317.349C395.898 314.462 393.367 311.307 390.983 308.306C313.118 210.148 232.583 114.002 154.077 16.2544V16.264ZM69.8684 95.3615V245.933H107.294V95.3615H69.8684ZM107.294 254.472H69.8684V320.265H107.294V254.472ZM107.294 329.795H69.8684V374.586H107.294V329.795Z" fill="#E5E5E5" fill-opacity="0.5"/>
+</svg>
 </div>
 
 
 
-    <div class="flex flex-col lg:flex-row w-full gap-5 lg:gap-8 xl:gap-12  items-baseline z-10 pr-10 md:pr-0"> 
-      <div class="lg:w-1/2 xl:w-2/5">
-        <h2 class="text-[28px] md:text-[36px] lg:text-[42px] tracking-wider  text-black font-semibold leading-normal">Let's design something beautiful.</h2>
-      </div>
-      <div class="lg:w-1/2 xl:w-3/5 flex flex-col">
-        <p class="text-[#535353] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] font-normal leading-normal mb-5 pr-10 md:pr-15">Whether you need a fresh layout or a full renovation plan - Nikolina is here to help.</p>
-        <button class="bg-[#4D86FF] text-white w-full lg:w-[55%]  py-3.5 rounded-full font-light hover:bg-blue-600 transition-colors text-base mt-auto lg:mt-5">
-          Get a Consultation
-        </button>
-      </div>
+  <div class="flex flex-col lg:flex-row w-full gap-5 lg:gap-8 xl:gap-12  items-baseline z-10 pr-10 md:pr-0"> 
+    <div class="lg:w-1/2 xl:w-2/5">
+      <h2 class="text-[28px] md:text-[36px] lg:text-[42px] tracking-wider  text-black font-semibold leading-normal">Let's design something beautiful.</h2>
+    </div>
+    <div class="lg:w-1/2 xl:w-3/5 flex flex-col">
+      <p class="text-[#535353] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] font-normal leading-normal mb-5 pr-10 md:pr-15">Whether you need a fresh layout or a full renovation plan - Nikolina is here to help.</p>
+      <button class="bg-[#4D86FF] text-white w-full lg:w-[55%]  py-3.5 rounded-full font-light hover:bg-blue-600 transition-colors text-base mt-auto lg:mt-5">
+        Get a Consultation
+      </button>
     </div>
   </div>
 </div>
-      
-      <div class="container mx-auto pt-20 lg:pt-0 px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-3 pt-5 lg:pt-0 pb-20 gap-12">
-              <div class="lg:col-span-1 lg:text-left w-full text-center">
-                  <div class="font-bold text-white mb-3">
-                      <div class="inline-flex flex-col items-center">
-                          <img class="w-12.5 h-12 mb-1" src="./images/loaded/logo.png" />
-                          <span class="text-[8px] text-[#BDBDBD] leading-relaxed tracking-widest uppercase text-center">
-                              InteriorDesign
-                          </span>
-                      </div>
-                  </div>
-                  <p class="text-[#DBDBDB] text-sm leading-relaxed">
-                    Nikolina Vujinović is an architect and interior designer based in Banja Luka. With a deep passion for spatial harmony, she specializes in creating modern, warm, and functional interiors.
-                  </p>
-              </div>
-              
-              
-              <div class="lg:col-span-2 flex flex-col lg:flex-row justify-end lg:gap-12 gap-8">
-              <div class="lg:order-3 order-2 space-y-8 text-sm font-normal lg:text-left text-center mt-10 lg:mt-0">
-                  <h3 class="text-base font-medium mb-10">Get in Touch:</h3>
+</div>
+    
+    <div class="container mx-auto pt-20 lg:pt-0 px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 pt-5 lg:pt-0 pb-20 gap-12">
+            <div class="lg:col-span-1 lg:text-left w-full text-center">
+                <div class="font-bold text-white mb-3">
+                    <div class="inline-flex flex-col items-center">
+                        <img class="w-12.5 h-12 mb-1" src="./images/loaded/logo.png" />
+                        <span class="text-[8px] text-[#BDBDBD] leading-relaxed tracking-widest uppercase text-center">
+                            InteriorDesign
+                        </span>
+                    </div>
+                </div>
+                <p class="text-[#DBDBDB] text-sm leading-relaxed">
+                  Nikolina Vujinović is an architect and interior designer based in Banja Luka. With a deep passion for spatial harmony, she specializes in creating modern, warm, and functional interiors.
+                </p>
+            </div>
+            
+            
+            <div class="lg:col-span-2 flex flex-col lg:flex-row justify-end lg:gap-12 gap-8">
+            <div class="lg:order-3 order-2 space-y-8 text-sm font-normal lg:text-left text-center mt-10 lg:mt-0">
+                <h3 class="text-base font-medium mb-10">Get in Touch:</h3>
 
-                  <div class="flex items-center justify-center lg:justify-start space-x-2">
-                    <div>
-                    <svg class="w-5 h-5" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.5 9C7.05 9 6.675 8.85 6.3 8.7L0 4.8V9.75C0 11.025 0.975 12 2.25 12H12.75C14.025 12 15 11.025 15 9.75V4.8L8.7 8.7C8.325 8.85 7.95 9 7.5 9ZM12.75 0H2.25C0.975 0 0 0.975 0 2.25V3.075L7.125 7.425C7.35 7.575 7.65 7.575 7.875 7.425L15 3.075V2.25C15 0.975 14.025 0 12.75 0Z" fill="white"/>
+                <div class="flex items-center justify-center lg:justify-start space-x-2">
+                  <div>
+                  <svg class="w-5 h-5" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 9C7.05 9 6.675 8.85 6.3 8.7L0 4.8V9.75C0 11.025 0.975 12 2.25 12H12.75C14.025 12 15 11.025 15 9.75V4.8L8.7 8.7C8.325 8.85 7.95 9 7.5 9ZM12.75 0H2.25C0.975 0 0 0.975 0 2.25V3.075L7.125 7.425C7.35 7.575 7.65 7.575 7.875 7.425L15 3.075V2.25C15 0.975 14.025 0 12.75 0Z" fill="white"/>
+                  </svg>
+                </div>
+                <div>
+                  <a href="mailto:vujinovicnikolina5@gmail.com" class="hover:text-[#DBDBDB] cursor-pointer">vujinovicnikolina5@gmail.com</a>
+                </div>
+              </div>
+                <div class="flex items-center justify-center lg:justify-start space-x-2">
+                  <div>
+                    <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_70_1377)">
+                        <path d="M13.7866 11.1361C12.82 10.3094 11.8391 9.80864 10.8844 10.6341L10.3144 11.133C9.89727 11.4951 9.12177 13.1872 6.12345 9.73808C3.12576 6.29332 4.90964 5.75697 5.32736 5.39795L5.90055 4.89843C6.85024 4.07112 6.49184 3.02963 5.80689 1.95755L5.39354 1.30819C4.70546 0.238608 3.95619 -0.463831 3.004 0.362237L2.4895 0.811798C2.06866 1.11837 0.892312 2.1149 0.606966 4.00805C0.263551 6.27958 1.34687 8.88079 3.82882 11.7349C6.30765 14.5902 8.73465 16.0244 11.0337 15.9995C12.9443 15.9789 14.0982 14.9536 14.4591 14.5809L14.9754 14.1307C15.9251 13.3052 15.3351 12.4648 14.3679 11.6362L13.7866 11.1361Z" fill="white"/>
+                        </g>
                     </svg>
                   </div>
                   <div>
-                    <a href="mailto:vujinovicnikolina5@gmail.com" class="hover:text-[#DBDBDB] cursor-pointer">vujinovicnikolina5@gmail.com</a>
+                    <a href="tel:+38765989581" class="hover:text-[#DBDBDB] cursor-pointer">+387 65 989 581</a>
                   </div>
                 </div>
-                  <div class="flex items-center justify-center lg:justify-start space-x-2">
-                    <div>
-                      <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_70_1377)">
-                          <path d="M13.7866 11.1361C12.82 10.3094 11.8391 9.80864 10.8844 10.6341L10.3144 11.133C9.89727 11.4951 9.12177 13.1872 6.12345 9.73808C3.12576 6.29332 4.90964 5.75697 5.32736 5.39795L5.90055 4.89843C6.85024 4.07112 6.49184 3.02963 5.80689 1.95755L5.39354 1.30819C4.70546 0.238608 3.95619 -0.463831 3.004 0.362237L2.4895 0.811798C2.06866 1.11837 0.892312 2.1149 0.606966 4.00805C0.263551 6.27958 1.34687 8.88079 3.82882 11.7349C6.30765 14.5902 8.73465 16.0244 11.0337 15.9995C12.9443 15.9789 14.0982 14.9536 14.4591 14.5809L14.9754 14.1307C15.9251 13.3052 15.3351 12.4648 14.3679 11.6362L13.7866 11.1361Z" fill="white"/>
-                          </g>
-                      </svg>
-                    </div>
-                    <div>
-                      <a href="tel:+38765989581" class="hover:text-[#DBDBDB] cursor-pointer">+387 65 989 581</a>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-center lg:justify-start space-x-2">
+                <div class="flex items-center justify-center lg:justify-start space-x-2">
 
-                    <div>
-                      <svg class="w-5 h-5" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.75 0C3.0285 0 0 3.0495 0 6.79875C0 12.126 6.1155 17.6265 6.37575 17.8575C6.483 17.9527 6.6165 18 6.75 18C6.8835 18 7.017 17.9527 7.12425 17.8582C7.3845 17.6265 13.5 12.126 13.5 6.79875C13.5 3.0495 10.4715 0 6.75 0ZM6.75 10.5C4.68225 10.5 3 8.81775 3 6.75C3 4.68225 4.68225 3 6.75 3C8.81775 3 10.5 4.68225 10.5 6.75C10.5 8.81775 8.81775 10.5 6.75 10.5Z" fill="white"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 class="text-white">Available Worldwide</h3>
-                    </div>
+                  <div>
+                    <svg class="w-5 h-5" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.75 0C3.0285 0 0 3.0495 0 6.79875C0 12.126 6.1155 17.6265 6.37575 17.8575C6.483 17.9527 6.6165 18 6.75 18C6.8835 18 7.017 17.9527 7.12425 17.8582C7.3845 17.6265 13.5 12.126 13.5 6.79875C13.5 3.0495 10.4715 0 6.75 0ZM6.75 10.5C4.68225 10.5 3 8.81775 3 6.75C3 4.68225 4.68225 3 6.75 3C8.81775 3 10.5 4.68225 10.5 6.75C10.5 8.81775 8.81775 10.5 6.75 10.5Z" fill="white"/>
+                    </svg>
                   </div>
-                 
-              </div>
-              
-              <div class="lg:order-4 order-1 space-y-10  lg:text-left mt-5 lg:mt-0 text-center">
-                  <h3 class="text-base font-medium">Quick Links:</h3>
+                  <div>
+                    <h3 class="text-white">Available Worldwide</h3>
+                  </div>
+                </div>
+               
+            </div>
+            
+            <div class="lg:order-4 order-1 space-y-10  lg:text-left mt-5 lg:mt-0 text-center">
+                <h3 class="text-base font-medium">Quick Links:</h3>
 
-                  <ol class="nav__links space-y-8 text-sm font-normal">
-                    <li><a href="#section-home" class="hover:text-[#DBDBDB] nav__link">Home</a></li>
-                    <li><a href="#section-about" class="hover:text-[#DBDBDB] nav__link">About</a></li>
-                    <li><a href="#section-services" class="hover:text-[#DBDBDB] nav__link">Services</a></li>
-                  </ol>
-              </div>
-              </div>
-          </div>
-      </div>
-    
-        <div class="absolute bottom-0 pb-5 pt-15 text-center w-full">
-            <div class="flex flex-col items-center">
-                <div class="flex space-x-6 mb-4">
-                    <a href="#" class="text-gray-400 rounded-full hover:opacity-90">
-                      
-                        <svg class="w-14 h-14" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="28.1749" cy="28.1749" r="28.1749" fill="#4D86FF"/>
-                            <path d="M39.6753 37.8284V30.0637C39.6753 26.2476 38.8539 23.3325 34.4018 23.3325C32.2551 23.3325 30.8241 24.4985 30.2411 25.6116H30.1881V23.6771H25.9746V37.8284H30.3737V30.8057C30.3737 28.9506 30.7181 27.1752 32.9972 27.1752C35.2498 27.1752 35.2762 29.2686 35.2762 30.9117V37.8018H39.6753V37.8284Z" fill="white"/>
-                            <path d="M18.8203 23.6772H23.2194V37.8285H18.8203V23.6772Z" fill="white"/>
-                            <path d="M21.0187 16.6279C19.6141 16.6279 18.4746 17.7675 18.4746 19.172C18.4746 20.5765 19.6141 21.7425 21.0187 21.7425C22.4232 21.7425 23.5627 20.5765 23.5627 19.172C23.5627 17.7675 22.4232 16.6279 21.0187 16.6279Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/vujinovicnikolina" class="text-gray-400 rounded-full  hover:bg-gradient-to-r hover:from-[#feda75] hover:via-[#d62976] hover:to-[#4f5bd5]/80"">
-                        <svg class="w-14 h-14" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="28.9991" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4792 40.4937C25.3221 40.6057 27.1628 40.6497 29 40.6456C30.837 40.6497 32.6779 40.6057 34.5208 40.4937C36.0728 40.3993 37.5452 39.8853 38.7728 38.8841C39.9552 37.9199 40.697 36.6283 41.0662 35.1815C41.4075 33.845 41.4257 32.5015 41.4424 31.2879L41.4428 31.264C41.4567 30.2376 41.4684 29.2079 41.4708 28.1772V28.1749V28.1727C41.4684 27.1419 41.4567 26.1123 41.4428 25.0859L41.4424 25.062C41.4257 23.8484 41.4072 22.5049 41.0662 21.1683C40.697 19.7215 39.9552 18.43 38.7728 17.4658C37.5452 16.4647 36.0728 15.9507 34.5208 15.8563C32.6779 15.7443 30.837 15.7001 29 15.7044C27.1628 15.7001 25.3221 15.7443 23.4792 15.8563C21.9272 15.9507 20.4548 16.4647 19.2271 17.4658C18.0447 18.43 17.3029 19.7215 16.9337 21.1683C16.5925 22.5051 16.5742 23.8488 16.5576 25.0624L16.5573 25.0859C16.5433 26.1123 16.5316 27.1419 16.5291 28.1727V28.1749V28.1772C16.5316 29.2079 16.5433 30.2376 16.5573 31.264L16.5576 31.2875C16.5742 32.5011 16.5925 33.8448 16.9337 35.1817C17.3029 36.6283 18.0447 37.9199 19.2271 38.8841C20.4548 39.8853 21.9272 40.3993 23.4792 40.4937ZM28.9977 38.697C27.1938 38.7012 25.3938 38.6579 23.5975 38.5486C22.4051 38.4761 21.3347 38.0884 20.4586 37.3741C19.6447 36.7102 19.1033 35.8027 18.8218 34.6999C18.5447 33.6139 18.5229 32.4913 18.5058 31.2374C18.4918 30.2141 18.4802 29.1938 18.4778 28.1749C18.4802 27.1561 18.4918 26.1358 18.5058 25.1125C18.5229 23.8586 18.5447 22.736 18.8218 21.6501C19.1033 20.5471 19.6447 19.6396 20.4586 18.9759C21.3347 18.2615 22.4051 17.8738 23.5975 17.8013C25.3938 17.6921 27.1938 17.6487 28.9977 17.653H29H29.0023C30.806 17.6487 32.6062 17.6921 34.4024 17.8013C35.595 17.8738 36.6652 18.2615 37.5413 18.9759C38.3552 19.6396 38.8967 20.5471 39.1781 21.65C39.4551 22.736 39.477 23.8585 39.4942 25.1125C39.5081 26.1358 39.5198 27.1559 39.5223 28.1749C39.5198 29.194 39.5081 30.2141 39.4942 31.2374C39.477 32.4913 39.4551 33.6139 39.1781 34.6999C38.8967 35.8027 38.3552 36.7102 37.5413 37.3741C36.6652 38.0884 35.595 38.4761 34.4024 38.5486C32.6062 38.6579 30.806 38.7012 29.0023 38.697H29H28.9977Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.943 28.175C22.943 31.5203 25.6551 34.2323 29.0004 34.2323C32.3457 34.2323 35.0577 31.5203 35.0577 28.175C35.0577 24.8297 32.3457 22.1177 29.0004 22.1177C25.6551 22.1177 22.943 24.8297 22.943 28.175ZM29.0004 32.2939C26.7255 32.2939 24.8814 30.4499 24.8814 28.175C24.8814 25.9001 26.7255 24.0561 29.0004 24.0561C31.2753 24.0561 33.1193 25.9001 33.1193 28.175C33.1193 30.4499 31.2753 32.2939 29.0004 32.2939Z" fill="white"/>
-                            <path d="M37.194 21.4047C37.194 22.1918 36.5559 22.83 35.7688 22.83C34.9817 22.83 34.3436 22.1918 34.3436 21.4047C34.3436 20.6176 34.9817 19.9795 35.7688 19.9795C36.5559 19.9795 37.194 20.6176 37.194 21.4047Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/38765989581" class="text-gray-400  rounded-full   hover:bg-[#25D366]/80">
-                        <svg class="w-14 h-14" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="28.8251" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
-                            <path d="M16.3533 40.666L18.1443 34.0128C16.6999 31.4209 16.241 28.3965 16.8518 25.4943C17.4626 22.5924 19.1021 20.0074 21.4695 18.2138C23.8368 16.4202 26.7734 15.5383 29.74 15.7299C32.7066 15.9215 35.5044 17.1738 37.6201 19.2569C39.7358 21.3401 41.0273 24.1144 41.2578 27.0709C41.4883 30.0271 40.6422 32.9673 38.8749 35.3517C37.1073 37.7359 34.5373 39.4045 31.6359 40.0514C28.7346 40.6982 25.6969 40.2796 23.08 38.8724L16.3533 40.666ZM23.4043 36.3828L23.8204 36.6289C25.7158 37.7497 27.9296 38.2134 30.117 37.9479C32.3042 37.6825 34.3421 36.7027 35.9128 35.1615C37.4835 33.6203 38.4991 31.604 38.8011 29.427C39.1031 27.25 38.6747 25.0344 37.5825 23.1256C36.4904 21.2168 34.7959 19.722 32.7629 18.8741C30.7301 18.0262 28.4733 17.8729 26.3439 18.438C24.2146 19.0031 22.3325 20.2549 20.991 21.9984C19.6494 23.7418 18.9237 25.8789 18.9269 28.0768C18.9252 29.899 19.4304 31.6861 20.3865 33.2389L20.6474 33.6679L19.6462 37.3816L23.4043 36.3828Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M34.0136 30.1455C33.7698 29.9493 33.4842 29.8111 33.1787 29.7417C32.8734 29.6722 32.556 29.6733 32.2509 29.7446C31.7926 29.9346 31.4964 30.6518 31.2004 31.0106C31.1378 31.0964 31.0462 31.1569 30.9423 31.1802C30.8383 31.2035 30.7296 31.1881 30.6363 31.1372C28.9583 30.4816 27.5518 29.2794 26.6454 27.7262C26.5681 27.6291 26.5315 27.5061 26.5434 27.3828C26.555 27.2593 26.6145 27.1454 26.7088 27.065C27.0391 26.7389 27.2816 26.3348 27.4138 25.8905C27.4433 25.4004 27.3307 24.9119 27.0896 24.4838C26.9032 23.8836 26.5484 23.3491 26.0672 22.9436C25.819 22.8323 25.5438 22.7949 25.2749 22.8361C25.0057 22.8773 24.7544 22.9952 24.5512 23.1757C24.1983 23.4794 23.9182 23.8582 23.7314 24.2842C23.5447 24.7103 23.4562 25.1726 23.4724 25.6373C23.4735 25.8982 23.5066 26.158 23.5711 26.4109C23.7348 27.0185 23.9866 27.599 24.3185 28.134C24.558 28.5438 24.8193 28.9406 25.1011 29.3227C26.0175 30.5772 27.1694 31.6426 28.4928 32.4593C29.1568 32.8743 29.8666 33.2119 30.608 33.4651C31.3781 33.8134 32.2286 33.947 33.0687 33.8519C33.5476 33.7795 34.0011 33.591 34.3896 33.3029C34.7783 33.0146 35.0899 32.6355 35.2969 32.1991C35.4187 31.9355 35.4557 31.6406 35.4027 31.3552C35.2759 30.7713 34.4931 30.4267 34.0136 30.1455Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="text-[#DBDBDB] text-xs md:text-sm space-y-1">
-                    <div>
-                        Copyright © <span id="year">2025</span> Nikolina Vujinović. All rights reserved.
-                    </div>
-                    <div>Website by Nikola Trtić</div>
-                </div>
+                <ol class="nav__links space-y-8 text-sm font-normal">
+                  <li><a href="#section-home" class="hover:text-[#DBDBDB] nav__link">Home</a></li>
+                  <li><a href="#section-about" class="hover:text-[#DBDBDB] nav__link">About</a></li>
+                  <li><a href="#section-services" class="hover:text-[#DBDBDB] nav__link">Services</a></li>
+                </ol>
+            </div>
             </div>
         </div>
     </div>
+  
+      <div class="absolute bottom-0 pb-5 pt-15 text-center w-full ">
+          <div class="flex flex-col items-center">
+              <div class="flex space-x-6 mb-4">
+                  <a href="#" class="text-gray-400 rounded-full hover:opacity-90">
+                    
+                      <svg class="w-14 h-14" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="28.1749" cy="28.1749" r="28.1749" fill="#4D86FF"/>
+                          <path d="M39.6753 37.8284V30.0637C39.6753 26.2476 38.8539 23.3325 34.4018 23.3325C32.2551 23.3325 30.8241 24.4985 30.2411 25.6116H30.1881V23.6771H25.9746V37.8284H30.3737V30.8057C30.3737 28.9506 30.7181 27.1752 32.9972 27.1752C35.2498 27.1752 35.2762 29.2686 35.2762 30.9117V37.8018H39.6753V37.8284Z" fill="white"/>
+                          <path d="M18.8203 23.6772H23.2194V37.8285H18.8203V23.6772Z" fill="white"/>
+                          <path d="M21.0187 16.6279C19.6141 16.6279 18.4746 17.7675 18.4746 19.172C18.4746 20.5765 19.6141 21.7425 21.0187 21.7425C22.4232 21.7425 23.5627 20.5765 23.5627 19.172C23.5627 17.7675 22.4232 16.6279 21.0187 16.6279Z" fill="white"/>
+                      </svg>
+                  </a>
+                  <a href="https://www.instagram.com/vujinovicnikolina" class="text-gray-400 rounded-full  hover:bg-gradient-to-r hover:from-[#feda75] hover:via-[#d62976] hover:to-[#4f5bd5]/80"">
+                      <svg class="w-14 h-14" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="28.9991" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4792 40.4937C25.3221 40.6057 27.1628 40.6497 29 40.6456C30.837 40.6497 32.6779 40.6057 34.5208 40.4937C36.0728 40.3993 37.5452 39.8853 38.7728 38.8841C39.9552 37.9199 40.697 36.6283 41.0662 35.1815C41.4075 33.845 41.4257 32.5015 41.4424 31.2879L41.4428 31.264C41.4567 30.2376 41.4684 29.2079 41.4708 28.1772V28.1749V28.1727C41.4684 27.1419 41.4567 26.1123 41.4428 25.0859L41.4424 25.062C41.4257 23.8484 41.4072 22.5049 41.0662 21.1683C40.697 19.7215 39.9552 18.43 38.7728 17.4658C37.5452 16.4647 36.0728 15.9507 34.5208 15.8563C32.6779 15.7443 30.837 15.7001 29 15.7044C27.1628 15.7001 25.3221 15.7443 23.4792 15.8563C21.9272 15.9507 20.4548 16.4647 19.2271 17.4658C18.0447 18.43 17.3029 19.7215 16.9337 21.1683C16.5925 22.5051 16.5742 23.8488 16.5576 25.0624L16.5573 25.0859C16.5433 26.1123 16.5316 27.1419 16.5291 28.1727V28.1749V28.1772C16.5316 29.2079 16.5433 30.2376 16.5573 31.264L16.5576 31.2875C16.5742 32.5011 16.5925 33.8448 16.9337 35.1817C17.3029 36.6283 18.0447 37.9199 19.2271 38.8841C20.4548 39.8853 21.9272 40.3993 23.4792 40.4937ZM28.9977 38.697C27.1938 38.7012 25.3938 38.6579 23.5975 38.5486C22.4051 38.4761 21.3347 38.0884 20.4586 37.3741C19.6447 36.7102 19.1033 35.8027 18.8218 34.6999C18.5447 33.6139 18.5229 32.4913 18.5058 31.2374C18.4918 30.2141 18.4802 29.1938 18.4778 28.1749C18.4802 27.1561 18.4918 26.1358 18.5058 25.1125C18.5229 23.8586 18.5447 22.736 18.8218 21.6501C19.1033 20.5471 19.6447 19.6396 20.4586 18.9759C21.3347 18.2615 22.4051 17.8738 23.5975 17.8013C25.3938 17.6921 27.1938 17.6487 28.9977 17.653H29H29.0023C30.806 17.6487 32.6062 17.6921 34.4024 17.8013C35.595 17.8738 36.6652 18.2615 37.5413 18.9759C38.3552 19.6396 38.8967 20.5471 39.1781 21.65C39.4551 22.736 39.477 23.8585 39.4942 25.1125C39.5081 26.1358 39.5198 27.1559 39.5223 28.1749C39.5198 29.194 39.5081 30.2141 39.4942 31.2374C39.477 32.4913 39.4551 33.6139 39.1781 34.6999C38.8967 35.8027 38.3552 36.7102 37.5413 37.3741C36.6652 38.0884 35.595 38.4761 34.4024 38.5486C32.6062 38.6579 30.806 38.7012 29.0023 38.697H29H28.9977Z" fill="white"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.943 28.175C22.943 31.5203 25.6551 34.2323 29.0004 34.2323C32.3457 34.2323 35.0577 31.5203 35.0577 28.175C35.0577 24.8297 32.3457 22.1177 29.0004 22.1177C25.6551 22.1177 22.943 24.8297 22.943 28.175ZM29.0004 32.2939C26.7255 32.2939 24.8814 30.4499 24.8814 28.175C24.8814 25.9001 26.7255 24.0561 29.0004 24.0561C31.2753 24.0561 33.1193 25.9001 33.1193 28.175C33.1193 30.4499 31.2753 32.2939 29.0004 32.2939Z" fill="white"/>
+                          <path d="M37.194 21.4047C37.194 22.1918 36.5559 22.83 35.7688 22.83C34.9817 22.83 34.3436 22.1918 34.3436 21.4047C34.3436 20.6176 34.9817 19.9795 35.7688 19.9795C36.5559 19.9795 37.194 20.6176 37.194 21.4047Z" fill="white"/>
+                      </svg>
+                  </a>
+                  <a href="https://wa.me/38765989581" class="text-gray-400  rounded-full   hover:bg-[#25D366]/80">
+                      <svg class="w-14 h-14" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="28.8251" cy="28.1749" r="27.713" stroke="white" stroke-width="0.923767"/>
+                          <path d="M16.3533 40.666L18.1443 34.0128C16.6999 31.4209 16.241 28.3965 16.8518 25.4943C17.4626 22.5924 19.1021 20.0074 21.4695 18.2138C23.8368 16.4202 26.7734 15.5383 29.74 15.7299C32.7066 15.9215 35.5044 17.1738 37.6201 19.2569C39.7358 21.3401 41.0273 24.1144 41.2578 27.0709C41.4883 30.0271 40.6422 32.9673 38.8749 35.3517C37.1073 37.7359 34.5373 39.4045 31.6359 40.0514C28.7346 40.6982 25.6969 40.2796 23.08 38.8724L16.3533 40.666ZM23.4043 36.3828L23.8204 36.6289C25.7158 37.7497 27.9296 38.2134 30.117 37.9479C32.3042 37.6825 34.3421 36.7027 35.9128 35.1615C37.4835 33.6203 38.4991 31.604 38.8011 29.427C39.1031 27.25 38.6747 25.0344 37.5825 23.1256C36.4904 21.2168 34.7959 19.722 32.7629 18.8741C30.7301 18.0262 28.4733 17.8729 26.3439 18.438C24.2146 19.0031 22.3325 20.2549 20.991 21.9984C19.6494 23.7418 18.9237 25.8789 18.9269 28.0768C18.9252 29.899 19.4304 31.6861 20.3865 33.2389L20.6474 33.6679L19.6462 37.3816L23.4043 36.3828Z" fill="white"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.0136 30.1455C33.7698 29.9493 33.4842 29.8111 33.1787 29.7417C32.8734 29.6722 32.556 29.6733 32.2509 29.7446C31.7926 29.9346 31.4964 30.6518 31.2004 31.0106C31.1378 31.0964 31.0462 31.1569 30.9423 31.1802C30.8383 31.2035 30.7296 31.1881 30.6363 31.1372C28.9583 30.4816 27.5518 29.2794 26.6454 27.7262C26.5681 27.6291 26.5315 27.5061 26.5434 27.3828C26.555 27.2593 26.6145 27.1454 26.7088 27.065C27.0391 26.7389 27.2816 26.3348 27.4138 25.8905C27.4433 25.4004 27.3307 24.9119 27.0896 24.4838C26.9032 23.8836 26.5484 23.3491 26.0672 22.9436C25.819 22.8323 25.5438 22.7949 25.2749 22.8361C25.0057 22.8773 24.7544 22.9952 24.5512 23.1757C24.1983 23.4794 23.9182 23.8582 23.7314 24.2842C23.5447 24.7103 23.4562 25.1726 23.4724 25.6373C23.4735 25.8982 23.5066 26.158 23.5711 26.4109C23.7348 27.0185 23.9866 27.599 24.3185 28.134C24.558 28.5438 24.8193 28.9406 25.1011 29.3227C26.0175 30.5772 27.1694 31.6426 28.4928 32.4593C29.1568 32.8743 29.8666 33.2119 30.608 33.4651C31.3781 33.8134 32.2286 33.947 33.0687 33.8519C33.5476 33.7795 34.0011 33.591 34.3896 33.3029C34.7783 33.0146 35.0899 32.6355 35.2969 32.1991C35.4187 31.9355 35.4557 31.6406 35.4027 31.3552C35.2759 30.7713 34.4931 30.4267 34.0136 30.1455Z" fill="white"/>
+                      </svg>
+                  </a>
+              </div>
+              <div class="text-[#DBDBDB] text-xs md:text-sm space-y-1">
+                  <div>
+                      Copyright © <span id="year">2025</span> Nikolina Vujinović. All rights reserved.
+                  </div>
+                  <div>Website by Nikola Trtić</div>
+              </div>
+          </div>
+    
+      </div>
+      <div class="absolute bottom-0  w-full overflow-hidden pointer-events-none z-0">
+        <div class="h-[600px] translate-y-1/2 -translate-x-2/3 rounded-full bg-[#4D86FF] blur-3xl opacity-20 mx-auto"></div>
+      </div>
+      
 </footer>
-    </div
+
   </body>
 </html>
+
+      
+   
