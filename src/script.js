@@ -129,7 +129,7 @@ function initFAQ() {
 
       if (!isActive) {
         openFAQ(id, item);
-      }
+      } 
     });
   });
 }
